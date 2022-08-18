@@ -1,1 +1,1 @@
-# sand
+# example-app

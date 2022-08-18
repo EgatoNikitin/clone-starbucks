@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-y: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  all: unset;
+}
+.wrapper {
+  width: 100%;
+  height: 1080px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left-block {
+  background-image: url(../src/componentns/imgs/bg-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1360px;
+  height: 100%;
+}
+.form-block {
+  width: 560px;
+  padding: 173px 55px 55px 55px;
+}
+.login-form {
   display: flex;
   flex-direction: column;
+  width: 450px;
+  height: 852px;
+}
+.login-title {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-size: 45px;
+}
+.input-email,
+.input-password {
+  font-size: 20px;
+  height: 78px;
+  padding-left: 20px;
+  border: 1px solid rgba(133, 133, 133, 0.692);
+  border-radius: 10px;
+}
+.input-password {
+  margin-top: 15px;
+}
+.form--container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.input-chek {
+  color: rgba(68, 68, 68, 0.692);
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+label {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.form-button {
+  margin-top: 25px;
+  width: 450px;
+  text-align: center;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #6675df;
+  color: #fff;
+  font-size: 18px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.forgot-pass {
+  cursor: pointer;
+}
+.forgot-pass:hover {
+  color: #6675df;
+  transition: all 0.4s;
 }
