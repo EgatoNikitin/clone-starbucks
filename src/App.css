@@ -3,6 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
   overflow-y: hidden;
+  user-select: none;
 }
 
 button {
@@ -22,7 +23,7 @@ button {
   background-image: url(../src/componentns/imgs/bg-01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1360px;
+  width: 70%;
   height: 100%;
 }
 .form-block {
@@ -78,6 +79,12 @@ label {
   background-color: #6675df;
   color: #fff;
   font-size: 18px;
+  cursor: pointer;
+}
+
+.form-button:hover{
+  background-color: #5362d1;
+  transition: all 0.3s;
 }
 .forgot-pass {
   cursor: pointer;
