@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+  }
+  
+  button {
+    all: unset;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  
+  .container {
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+  }
+  
+  .form-block {
+    width: 560px;
+    min-height: 500px;
+    max-height: 600px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 7%), 0 4px 5px rgb(0 0 0 / 6%), 0 1px 10px rgb(0 0 0 / 10%);
+  }
+  .login-form {
+    width: 450px;
+  
+    display: flex;
+    flex-direction: column;
+  }
+  .login-title {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  .input-email,
+  .input-password {
+    font-size: 20px;
+    height: 78px;
+    padding-left: 20px;
+    border: 1px solid rgba(133, 133, 133, 0.692);
+    border-radius: 10px;
+  }
+  
+  
+  .input-password {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-password>input{
+    all: unset;
+    width: 90%;
+    height: 100%;
+  }
+  .form--container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .input-chek {
+    color: rgba(68, 68, 68, 0.692);
+  }
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #00754a;
+  }
+  
+  label {
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .form-button {
+    margin-top: 25px;
+    width: 450px;
+    text-align: center;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #00754a;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .form-button:hover{
+    background-color: #036943;
+    transition: all 0.3s;
+  }
+  .forgot-pass {
+    cursor: pointer;
+    color: #00754a;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  .forgot-pass:hover {
+    color: #036943;
+    transition: all 0.4s;
+    text-decoration: none;
+  }
+  .input-password:focus, 
+  .input-password:hover,
+  .input-email:focus{
+    border:1px solid #039761;
+    outline: none;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 7%), 0 4px 5px rgb(0 0 0 / 6%), 0 1px 10px rgb(0 0 0 / 10%);
+  }
+  
+  .visibilty-icons{
+    width: 20px;
+    height: 20px;
+  }
