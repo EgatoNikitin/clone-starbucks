@@ -1,33 +1,32 @@
-import './SignInFooter.css'
+import {Buttons} from '../Buttons/Buttons';
+import './SignInFooter.scss';
 
 export const SignInFooter = () =>{
-    return(
-        <footer className='login-footer'>
-            <div className='footer--wrapper'>
-                <div className='footer--row'>
-                    <button type='button' className='footer--button'>
-                    Find a store
-                    </button>
-                    <ul className='footer--list'>
-                        <li>
+  return (
+    <footer className='login-footer'>
+      <div className='footer--wrapper'>
+        <div className='footer--row'>
+          <Buttons type='green' text='Find a store'/>
+          <ul className='footer--list'>
+            <li>
                         Web Accessibility
-                        </li>
-                        <li>
+            </li>
+            <li>
                         Privacy Policy
-                        </li>
-                        <li>
+            </li>
+            <li>
                         Terms of Use
-                        </li>
-                        <li>
+            </li>
+            <li>
                         Cookie Preferences
-                        </li>
-                    </ul>
-                </div>
-                
-                <div>
+            </li>
+          </ul>
+        </div>
+
+        <div>
                 © 2022 Starbucks
-                </div>
-            </div>
-        </footer>
-    )
-}
+        </div>
+      </div>
+    </footer>
+  );
+};

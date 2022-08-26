@@ -1,11 +1,12 @@
-import iconError from "../imgs/close.png";
-import iconSuccess from '../imgs/check.png'
-import "./Banner.css";
+import iconError from '../../imgs/close.png';
+import iconSuccess from '../../imgs/check.png';
+import './Banner.scss';
+import PropTypes from 'prop-types';
 
-export const Banner = ({ text, type }) => {
+export const Banner = ({text, type}) => {
   return (
     <>
-      {type === "error" ? (
+      {type === 'error' ? (
         <div className="banner--wrapper">
           <img src={iconError} alt="error icon" className="banner--icon" />
           <span className="banner--text">{text}</span>
@@ -18,4 +19,9 @@ export const Banner = ({ text, type }) => {
       )}
     </>
   );
+};
+
+Banner.propTypes = {
+  text: PropTypes.string.isRequired,
+  type: PropTypes.string,
 };

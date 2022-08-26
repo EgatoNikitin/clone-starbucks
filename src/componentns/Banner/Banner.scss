@@ -1,0 +1,27 @@
+.banner--wrapper{
+    width: 450px;
+    height: 35px;
+    box-sizing: border-box;
+    background-color: rgba(149, 29, 18, 0.2);
+    color: #900;
+    border: 2px solid #900;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 10px;
+
+    .success{
+        background-color: rgba(51, 117, 30, 0.2);
+        color: #070;
+        border-color: #070;
+    }
+
+
+    .banner--text{
+        padding-left: 20px;
+    }
+
+    .banner--icon{
+        padding-left: 7px;
+    }
+}

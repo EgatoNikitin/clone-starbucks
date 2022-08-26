@@ -1,9 +1,14 @@
-import "./App.css";
-import LoginPage from "./page/LoginPage";
+import {Routes, Route} from 'react-router';
+import './App.css';
+import LoginPage from './page/LoginPage/LoginPage';
+import MainPage from './page/MainPage/MainPage';
 
 const App = () => {
   return (
-    <LoginPage/>
+    <Routes>
+      <Route path='/login' element={<LoginPage/>}/>
+      <Route path='/' element={<MainPage/>}/>
+    </Routes>
   );
 };
 

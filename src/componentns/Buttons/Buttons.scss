@@ -1,0 +1,48 @@
+@use '../../utils/colors';
+
+.button{
+  background: none;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 1px;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 7px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .2s ease;
+  color: colors.$dim_green;
+  width: 130px;
+  height: 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: rgba(0, 117, 74, 0.1)
+}
+.light{
+  color: black;
+
+  width: 80px;
+  height: 32px;
+
+  font-size: 14px;
+}
+
+.black{
+  color: white;
+
+  width: 100px;
+  height: 32px;
+
+  font-size: 14px;
+
+  background: black;
+  border: 1px solid black;
+}
+
+.light:hover{
+  background-color: rgba(222, 217, 217, 0.3);
+}
