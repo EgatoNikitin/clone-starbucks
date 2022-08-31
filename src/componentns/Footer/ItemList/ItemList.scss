@@ -1,0 +1,17 @@
+.footer-list--title{
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.footer-list--item{
+  font-size: 17px;
+  color: rgba(0,0,0,.58);
+  cursor: pointer;
+  padding: 8px 0;
+  margin-bottom: 8px;
+  &:hover{
+    color: black;
+  }
+}
+

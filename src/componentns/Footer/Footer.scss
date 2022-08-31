@@ -1,0 +1,79 @@
+@use '../../utils/colors';
+
+.footer{
+
+  border-top: 2px solid rgba(145, 139, 130, 0.35);
+
+  .footer--social-media{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-top: 2px solid rgba(145, 139, 130, 0.35);
+    padding: 32px 0 0;
+    margin: 32px 40px 0;
+
+    .social-media--copy-rights{
+      color: rgba(0,0,0,.58);
+      margin: 24px 0 70px;
+    }
+
+    .social-media--list{
+      display: flex;
+    }
+
+    .social-media--rules{
+      display: flex;
+      font-weight: 500;
+      font-size: 18px;
+      text-align: center;
+      width: 60%;
+      justify-content: space-between;
+      margin-top: 16px;
+      div{
+        display: flex;
+        width: 180px;
+        box-sizing: border-box;
+        margin: 0 16px;
+
+      &:first-child{
+        margin: 0;
+      }
+
+        &:hover{
+          text-decoration: underline;
+          cursor: pointer;
+        }
+
+      }
+      span{
+        display: block;
+        width: 1px;
+        background: black;
+        border: 1px solid black;
+
+      }
+    }
+  }
+
+  .footer-list--wrapper{
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 40px;
+    justify-content: space-between;
+    height: 380px;
+
+    .list-column{
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      width: 180px;
+
+      .list-of-item{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: space-between;
+      }
+    }
+  }
+}

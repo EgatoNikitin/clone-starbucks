@@ -1,0 +1,15 @@
+.footer--icon-wrapper{
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer--icon-wrapper:hover{
+  background: rgba(145, 139, 130, 0.35);
+  transition: all 0.4s ease-in-out;
+}

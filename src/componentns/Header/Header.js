@@ -8,22 +8,34 @@ import {Buttons} from '../Buttons/Buttons';
 export const Header = ()=>{
   return (
     <header className='header'>
-      <Link to='/'>
-        <img src={starBucksIcon} alt='starbucks icon' className='header-icon'/>
-      </Link>
-      <nav className='header--navigation'>
-        <ul className='navigation--list'>
-          <li className='navigation--list--item'>menu</li>
-          <li className='navigation--list--item'>rewards</li>
-          <li className='navigation--list--item'>gift cards</li>
-        </ul>
-      </nav>
-      <div className='header--location'>
-        <img src={locationPin} alt='location-pin' className='location--pin'/>
-        <span className='location--text'>Find a store</span>
+      <div className='header--right'>
+        <Link to='/'>
+          <img
+            src={starBucksIcon}
+            alt='starbucks icon'
+            className='header-icon'/>
+        </Link>
+        <nav className='header--navigation'>
+          <ul className='navigation--list'>
+            <li className='navigation--list--item'>menu</li>
+            <li className='navigation--list--item'>rewards</li>
+            <li className='navigation--list--item'>gift cards</li>
+          </ul>
+        </nav>
       </div>
-      <Buttons type='light' text='Sign in'/>
-      <Buttons type='black' text='Join now'/>
+      <div className='header--left'>
+        <div className='header--location'>
+          <img src={locationPin} alt='location-pin' className='location--pin'/>
+          <span className='location--text'>Find a store</span>
+        </div>
+        <Link to='/login'>
+          <Buttons type='light' text='Sign in'/>
+        </Link>
+        <Link to='/login'>
+          <Buttons type='black' text='Join now'/>
+        </Link>
+      </div>
+
     </header>
   );
 };
