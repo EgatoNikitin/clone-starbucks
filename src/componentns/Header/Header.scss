@@ -1,18 +1,24 @@
-@use '../../utils/colors';
+@use "../../utils/colors";
 
-.header{
+.header {
   width: 100%;
   min-height: 80px;
   max-height: 150px;
   box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
-  padding-left: 4rem;
-  padding-right: 4rem;
   display: flex;
-  align-items: center;
   box-sizing: border-box;
-  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background: white;
 
-  .header--right{
+  .header--wrapper {
+    margin-right: 240px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+  }
+  .header--right {
     display: flex;
     align-items: center;
     max-width: 350px;
@@ -20,7 +26,7 @@
     justify-content: space-between;
   }
 
-  .header--left{
+  .header--left {
     display: flex;
     align-items: center;
     max-width: 380px;
@@ -28,20 +34,20 @@
     justify-content: space-between;
   }
 
-  .header-icon{
+  .header-icon {
     cursor: pointer;
-
+    margin-left: 150px;
+    margin-top: 15px;
     width: 50px;
     height: 50px;
-    margin-right: 40px;
   }
 
-  .header--navigation{
+  .header--navigation {
     display: flex;
 
     width: 100%;
     max-width: 300px;
-    .navigation--list{
+    .navigation--list {
       display: inherit;
       justify-content: space-between;
 
@@ -49,20 +55,20 @@
 
       list-style: none;
 
-      .navigation--list--item{
+      .navigation--list--item {
         text-transform: uppercase;
         font-weight: 700;
         font-size: 14px;
         cursor: pointer;
       }
 
-      .navigation--list--item:hover{
+      .navigation--list--item:hover {
         color: colors.$dark_green;
       }
     }
   }
 
-  .header--location{
+  .header--location {
     display: flex;
     justify-content: space-evenly;
 
@@ -70,18 +76,18 @@
     max-width: 109px;
 
     cursor: pointer;
-    .location--pin{
+    .location--pin {
       width: 23px;
       height: 23px;
     }
 
-    .location--text{
+    .location--text {
       font-weight: 500;
       font-size: 14px;
     }
   }
 
-  .header--location:hover{
+  .header--location:hover {
     filter: invert(17%) sepia(79%) saturate(6188%) hue-rotate(161deg) brightness(81%) contrast(98%);
   }
 }
