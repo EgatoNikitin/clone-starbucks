@@ -47,7 +47,7 @@ const LoginPage = () => {
       <div className="container">
         <span className="login-title">Sign in or create an account</span>
         <div className="form-block">
-          <form className="login-form">
+          <form className="login-form" autoComplete="off">
             <input
               className="input-email"
               type="email"

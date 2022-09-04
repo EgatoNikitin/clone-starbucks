@@ -23,5 +23,6 @@ module.exports = {
     'template-curly-spacing': 0,
     'indent': 2,
     'react-hooks/exhaustive-deps': 0,
+    'linebreak-style': 0,
   },
 };

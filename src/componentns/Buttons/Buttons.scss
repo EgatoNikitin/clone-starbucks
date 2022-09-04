@@ -46,3 +46,14 @@
 .light:hover{
   background-color: rgba(222, 217, 217, 0.3);
 }
+
+.large{
+  width: 120px;
+
+  color: white;
+  border-color: white;
+
+  &:hover{
+    background: colors.$bright_green;
+  }
+}
