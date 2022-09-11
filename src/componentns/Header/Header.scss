@@ -10,13 +10,14 @@ a{
   justify-content: center;
   box-sizing: border-box;
   position: sticky;
+  padding: 0 2.7%;
   top: 0;
   background: white;
 
   .header--wrapper {
     display: flex;
     justify-content: space-between;
-    width: 1440px;
+    width: 100%;
   }
   .header--right {
     display: flex;

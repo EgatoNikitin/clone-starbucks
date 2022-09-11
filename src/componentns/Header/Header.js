@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import {Link} from 'react-router-dom';
 
 import starBucksIcon from '../../imgs/starbucks.png';
@@ -20,7 +19,9 @@ export const Header = () => {
         <div className='header--right'>
           <nav className='header--navigation'>
             <ul className='navigation--list'>
-              <Link to='/menu'><li className='navigation--list--item'>menu</li></Link>
+              <Link to='/menu'>
+                <li className='navigation--list--item'>menu</li>
+              </Link>
               <li className='navigation--list--item'>rewards</li>
               <li className='navigation--list--item'>gift cards</li>
             </ul>

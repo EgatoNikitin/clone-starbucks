@@ -54,14 +54,17 @@
   .footer-list--wrapper {
     display: flex;
     box-sizing: border-box;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 0 2.7%;
     .list-column {
       margin-top: 24px;
+      margin-left: 40px;
       display: flex;
       flex-direction: column;
       width: 180px;
-
+      &:first-child {
+        margin-left: 0px;
+      }
       .list-of-item {
         display: flex;
         flex-direction: column;

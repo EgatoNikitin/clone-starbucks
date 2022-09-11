@@ -3,6 +3,7 @@ import iceLatte from '../imgs/main-content/ice-latte.jpg';
 import apple from '../imgs/main-content/apple.jpg';
 import cakes from '../imgs/main-content/cakes.png';
 import coffee from '../imgs/main-content/coffe.png';
+import icon from '../imgs/menu/americano.svg';
 
 export const FOOTER_TITLES = {
   ABOUT_US: 'About us',
@@ -89,5 +90,59 @@ export const MAIN_CONTENT = [
     direction: 'right',
     buttonText: 'Order now',
     url: coffee,
+  },
+];
+export const FILTERS = [
+  {
+    title: 'Drinks',
+    url: icon,
+    listOfItems: [
+      'Hot Coffees',
+      'Hot Teas',
+      'Hot Drinks',
+      'Frappuccino® Blended Beverages',
+      'Cold Coffees',
+      'Iced Teas',
+      'Cold Drinks',
+    ],
+  },
+  {
+    title: 'Food',
+    url: icon,
+    listOfItems: [
+      'Hot Breakfast',
+      'Bakery',
+      'Lunch',
+      'Snacks & Sweets',
+      'Oatmeal & Yogurt',
+    ],
+  },
+  {
+    title: 'At Home Coffee',
+    url: icon,
+    listOfItems: [
+      'Whole Bean',
+      'VIA® Instant',
+    ],
+  },
+  {
+    title: 'Merchandise',
+    url: icon,
+    listOfItems: [
+      'Cold Cups',
+      'Tumblers',
+      'Mugs',
+      'Water Bottles',
+      'Other',
+    ],
+  },
+  {
+    title: 'Gift Cards',
+    url: icon,
+    listOfItems: [
+      'Happy Birthday',
+      'Thank You',
+      'Traditional',
+    ],
   },
 ];
