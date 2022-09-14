@@ -5,6 +5,7 @@ export const FilterList = (
     {
       title,
       arrayOfItems,
+      setActiveFilter,
     },
 ) =>{
   return (
@@ -16,7 +17,9 @@ export const FilterList = (
         {
           arrayOfItems.map((el, index)=> {
             return (
-              <li className='filter--list-item' key={index+el}>
+              <li onClick={()=>setActiveFilter(el)}
+                className='filter--list-item'
+                key={index+el}>
                 {el}
               </li>
             );
@@ -30,4 +33,5 @@ export const FilterList = (
 FilterList.propTypes ={
   title: PropTypes.string,
   arrayOfItems: PropTypes.any,
+  setActiveFilter: PropTypes.func,
 };

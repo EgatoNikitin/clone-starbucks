@@ -1,5 +1,5 @@
 @use "../../utils/colors";
-a{
+a {
   all: unset;
 }
 .header {
@@ -91,4 +91,12 @@ a{
   .header--location:hover {
     filter: invert(17%) sepia(79%) saturate(6188%) hue-rotate(161deg) brightness(81%) contrast(98%);
   }
+}
+@media (max-width: 1920px) and (min-width: 1441px) {
+  .header {
+    padding: 0 8%;
+  }
+}
+.no-margin {
+  padding: 0 2.7%;
 }

@@ -1,6 +1,8 @@
 import {MainCard} from '../MainCard/MainCard';
 import {MAIN_CONTENT} from '../../constants';
 
+import './MainContent.scss';
+
 export const MainContent = () => {
   return (
     <main>

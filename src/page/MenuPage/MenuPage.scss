@@ -39,9 +39,6 @@ li {
     display: flex;
 }
 
-footer {
-    padding: 0 5%;
-}
 .sticky--bottom {
     display: flex;
     align-items: center;
@@ -96,4 +93,7 @@ footer {
 }
 .main--container {
     margin-bottom: 100px;
+}
+.main--menu {
+    margin: 0;
 }

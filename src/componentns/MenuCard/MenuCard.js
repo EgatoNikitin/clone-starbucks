@@ -7,6 +7,7 @@ export const MenuCard = (
       title,
       arrayOfItems,
       url,
+      cardStyle,
     },
 ) =>{
   return (
@@ -18,7 +19,9 @@ export const MenuCard = (
         {
           arrayOfItems.map((el, index)=> {
             return (
-              <div className='MenuCard--item' key={index+el}>
+              <div
+                className={`MenuCard--item ${cardStyle}`}
+                key={index+el}>
                 <img src={url}/>
                 {el}
               </div>
@@ -33,4 +36,5 @@ MenuCard.propTypes ={
   title: PropTypes.string,
   arrayOfItems: PropTypes.any,
   url: PropTypes.any,
+  cardStyle: PropTypes.string,
 };

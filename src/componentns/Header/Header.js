@@ -1,13 +1,18 @@
 import {Link} from 'react-router-dom';
+import {useLocation} from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import starBucksIcon from '../../imgs/starbucks.png';
 import locationPin from '../../imgs/location.svg';
 import './Header.scss';
 import {Buttons} from '../Buttons/Buttons';
 
-export const Header = () => {
+export const Header = ({setActiveFilter}) => {
+  const location = useLocation();
+  const headerClassName = location.pathname.includes('/menu') ?
+  'header no-margin' : 'header';
   return (
-    <header className='header'>
+    <header className={headerClassName}>
       <Link to='/'>
         <img
           src={starBucksIcon}
@@ -20,7 +25,10 @@ export const Header = () => {
           <nav className='header--navigation'>
             <ul className='navigation--list'>
               <Link to='/menu'>
-                <li className='navigation--list--item'>menu</li>
+                <li onClick={()=>
+                  setActiveFilter('Menu')
+                }
+                className='navigation--list--item'>menu</li>
               </Link>
               <li className='navigation--list--item'>rewards</li>
               <li className='navigation--list--item'>gift cards</li>
@@ -44,4 +52,7 @@ export const Header = () => {
       </div>
     </header>
   );
+};
+Header.propTypes ={
+  setActiveFilter: PropTypes.func,
 };

@@ -10,6 +10,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         border-top: 1px solid rgb(224, 224, 224);
+
         .MenuCard--item {
             font-size: 18px;
             display: flex;
@@ -20,6 +21,13 @@
             img {
                 margin-right: 10px;
             }
+        }
+        .column {
+            flex-direction: column;
+            width: 290px;
+            height: 224px;
+            justify-content: space-evenly;
+            text-align: center;
         }
     }
 }
