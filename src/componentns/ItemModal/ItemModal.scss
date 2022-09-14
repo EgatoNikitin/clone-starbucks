@@ -1,0 +1,93 @@
+@use  '../../utils/colors';
+
+.active--catagori{
+  padding-left: 125px;
+
+
+  h2{
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+
+.modal--item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 332px;
+  box-sizing: border-box;
+  background: colors.$dark;
+  padding: 0 12%;
+
+  img{
+    height: 300px;
+    width: 300px;
+  }
+
+  .item--text{
+    color: white;
+    font-weight: 600;
+    font-size: 36px;
+    padding-right: 100px;
+    box-sizing: border-box;
+  }
+}
+
+.item--customize{
+  background: white;
+  padding: 2rem 40px 0 131px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+
+  .customize--column{
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+    width: 100%;
+
+    h4{
+      font-size: 26px;
+      font-weight: 600;
+      box-sizing: border-box;
+      padding-bottom: 12px;
+
+      border-bottom: 2px solid colors.$light_green;
+    }
+
+    .options--list{
+      display: flex;
+      justify-content: space-between;
+
+      box-sizing: border-box;
+      padding: 30px 100px 0;
+
+      div{
+        display: block;
+        width: 50px;
+        height: 50px;
+
+        background: url('../../imgs/cup.svg') no-repeat center;
+        z-index: 2;
+      }
+
+      .active{
+        border: 1px solid colors.$dim_green;
+        border-radius: 50%;
+        position: relative;
+      }
+
+      .active::after{
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: colors.$dark_green;
+        border-radius: 50%;
+        position: absolute;
+        left: 40%;
+        bottom: 35%;
+      }
+    }
+  }
+}

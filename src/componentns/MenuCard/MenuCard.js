@@ -6,8 +6,8 @@ export const MenuCard = (
     {
       title,
       arrayOfItems,
-      url,
       cardStyle,
+      itemClickHandler,
     },
 ) =>{
   return (
@@ -20,10 +20,11 @@ export const MenuCard = (
           arrayOfItems.map((el, index)=> {
             return (
               <div
+                onClick={()=>itemClickHandler(el.icon, el.title)}
                 className={`MenuCard--item ${cardStyle}`}
                 key={index+el}>
-                <img src={url}/>
-                {el}
+                <img src={el.icon} alt='list icon'/>
+                {el.title}
               </div>
             );
           })
@@ -37,4 +38,5 @@ MenuCard.propTypes ={
   arrayOfItems: PropTypes.any,
   url: PropTypes.any,
   cardStyle: PropTypes.string,
+  itemClickHandler: PropTypes.func,
 };
