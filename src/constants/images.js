@@ -9,7 +9,8 @@ import roastPike
   from '../imgs/menu/Drinks/Hot Coffees/Brewed Coffees/roast - pike place.jpg';
 import veranda
   from '../imgs/menu/Drinks/Hot Coffees/Brewed Coffees/veranda blend.jpg';
-import cappac from '../imgs/menu/Drinks/Hot Coffees/Cappuccinos/IMG-5375.jpg';
+import cappuccino
+  from '../imgs/menu/Drinks/Hot Coffees/Cappuccinos/IMG-5375.jpg';
 import espresso1
   from '../imgs/menu/Drinks/Hot Coffees/Espresso Shots/IMG-5376.jpg';
 import espresso2
@@ -108,6 +109,138 @@ import greenTeas3 from '../imgs/menu/Drinks/Hot Teas/Green Teas/IMG-5402.jpg';
 import greenTeas4 from '../imgs/menu/Drinks/Hot Teas/Green Teas/IMG-5404.jpg';
 import herbalTeas1 from '../imgs/menu/Drinks/Hot Teas/Herbal Teas/IMG-5405.jpg';
 import herbalTeas2 from '../imgs/menu/Drinks/Hot Teas/Herbal Teas/IMG-5406.jpg';
+import hotChocolates1 from
+  '../imgs/menu/Drinks/Hot Drinks/Hot Chocolates/IMG-58890.jpg';
+import hotChocolates2 from
+  '../imgs/menu/Drinks/Hot Drinks/Hot Chocolates/IMG-5889.jpg';
+import juice1 from '../imgs/menu/Drinks/Hot Drinks/Juice/IMG-5890.jpg';
+import juice2 from '../imgs/menu/Drinks/Hot Drinks/Juice/IMG-5891.jpg';
+import steamers1 from '../imgs/menu/Drinks/Hot Drinks/Steamers/IMG-5892.jpg';
+import steamers2 from '../imgs/menu/Drinks/Hot Drinks/Steamers/IMG-5893.jpg';
+import steamers3 from '../imgs/menu/Drinks/Hot Drinks/Steamers/IMG-5894.jpg';
+import coffeeFrappuccino1
+  from
+  '../imgs/menu/Drinks/Frappuccino Blended/Coffee Frappuccino/IMG-5896.jpg';
+import coffeeFrappuccino2
+  from
+  '../imgs/menu/Drinks/Frappuccino Blended/Coffee Frappuccino/IMG-5897.jpg';
+import coffeeFrappuccino3
+  from
+  '../imgs/menu/Drinks/Frappuccino Blended/Coffee Frappuccino/IMG-5898.jpg';
+import coffeeFrappuccino4
+  from
+  '../imgs/menu/Drinks/Frappuccino Blended/Coffee Frappuccino/IMG-5899.jpg';
+import coffeeFrappuccino5
+  from
+  '../imgs/menu/Drinks/Frappuccino Blended/Coffee Frappuccino/IMG-5900.jpg';
+import coffeeFrappuccino6
+  from
+  '../imgs/menu/Drinks/Frappuccino Blended/Coffee Frappuccino/IMG-5901.jpg';
+import coffeeFrappuccino7
+  from
+  '../imgs/menu/Drinks/Frappuccino Blended/Coffee Frappuccino/IMG-5902.jpg';
+import coffeeFrappuccino8
+  from
+  '../imgs/menu/Drinks/Frappuccino Blended/Coffee Frappuccino/IMG-5903.jpg';
+import coffeeFrappuccino9
+  from
+  '../imgs/menu/Drinks/Frappuccino Blended/Coffee Frappuccino/IMG-5904.jpg';
+import coffeeFrappuccino10
+  from
+  '../imgs/menu/Drinks/Frappuccino Blended/Coffee Frappuccino/IMG-5905.jpg';
+import coffeeFrappuccino11
+  from
+  '../imgs/menu/Drinks/Frappuccino Blended/Coffee Frappuccino/IMG-5906.jpg';
+import cremeFrappuccino1
+  from
+  '../imgs/menu/Drinks/Frappuccino Blended/Creme Frappuccino/IMG-5907.jpg';
+import cremeFrappuccino2
+  from
+  '../imgs/menu/Drinks/Frappuccino Blended/Creme Frappuccino/IMG-5908.jpg';
+import cremeFrappuccino3
+  from
+  '../imgs/menu/Drinks/Frappuccino Blended/Creme Frappuccino/IMG-5909.jpg';
+import cremeFrappuccino4
+  from
+  '../imgs/menu/Drinks/Frappuccino Blended/Creme Frappuccino/IMG-5910.jpg';
+import cremeFrappuccino5
+  from
+  '../imgs/menu/Drinks/Frappuccino Blended/Creme Frappuccino/IMG-5911.jpg';
+import cremeFrappuccino6
+  from
+  '../imgs/menu/Drinks/Frappuccino Blended/Creme Frappuccino/IMG-5912.jpg';
+import cremeFrappuccino7
+  from
+  '../imgs/menu/Drinks/Frappuccino Blended/Creme Frappuccino/IMG-5913.jpg';
+import cremeFrappuccino8
+  from
+  '../imgs/menu/Drinks/Frappuccino Blended/Creme Frappuccino/IMG-5914.jpg';
+import cremeFrappuccino9
+  from
+  '../imgs/menu/Drinks/Frappuccino Blended/Creme Frappuccino/IMG-5915.jpg';
+import cremeFrappuccino10
+  from
+  '../imgs/menu/Drinks/Frappuccino Blended/Creme Frappuccino/IMG-5916.jpg';
+import coldBrews1
+  from '../imgs/menu/Drinks/Cold Coffees/Cold Brews/IMG-5917.jpg';
+import coldBrews2
+  from '../imgs/menu/Drinks/Cold Coffees/Cold Brews/IMG-5918.jpg';
+import coldBrews3
+  from '../imgs/menu/Drinks/Cold Coffees/Cold Brews/IMG-5919.jpg';
+import coldBrews4
+  from '../imgs/menu/Drinks/Cold Coffees/Cold Brews/IMG-5920.jpg';
+import coldBrews5
+  from '../imgs/menu/Drinks/Cold Coffees/Cold Brews/IMG-5921.jpg';
+import coldBrews6
+  from '../imgs/menu/Drinks/Cold Coffees/Cold Brews/IMG-5922.jpg';
+import nitroColdBrews1
+  from '../imgs/menu/Drinks/Cold Coffees/Nitro Cold Brews/IMG-5923.jpg';
+import nitroColdBrews2
+  from '../imgs/menu/Drinks/Cold Coffees/Nitro Cold Brews/IMG-5924.jpg';
+import icedAmericano
+  from '../imgs/menu/Drinks/Cold Coffees/Iced Americano/IMG-5925.jpg';
+import icedCoffees1
+  from '../imgs/menu/Drinks/Cold Coffees/Iced Coffees/IMG-5926.jpg';
+import icedCoffees2
+  from '../imgs/menu/Drinks/Cold Coffees/Iced Coffees/IMG-5927.jpg';
+import icedCoffees3
+  from '../imgs/menu/Drinks/Cold Coffees/Iced Coffees/IMG-5928.jpg';
+import icedShakenEspresso1
+  from '../imgs/menu/Drinks/Cold Coffees/Iced Shaken Espresso/IMG-5929.jpg';
+import icedShakenEspresso2
+  from '../imgs/menu/Drinks/Cold Coffees/Iced Shaken Espresso/IMG-5930.jpg';
+import icedShakenEspresso3
+  from '../imgs/menu/Drinks/Cold Coffees/Iced Shaken Espresso/IMG-5931.jpg';
+import icedShakenEspresso4
+  from '../imgs/menu/Drinks/Cold Coffees/Iced Shaken Espresso/IMG-5932.jpg';
+import icedFlatWhites1
+  from '../imgs/menu/Drinks/Cold Coffees/Iced Flat Whites/IMG-5933.jpg';
+import icedFlatWhites2
+  from '../imgs/menu/Drinks/Cold Coffees/Iced Flat Whites/IMG-5934.jpg';
+import icedLattes1
+  from '../imgs/menu/Drinks/Cold Coffees/Iced Lattes/IMG-5935.jpg';
+import icedLattes2
+  from '../imgs/menu/Drinks/Cold Coffees/Iced Lattes/IMG-5936.jpg';
+import icedLattes3
+  from '../imgs/menu/Drinks/Cold Coffees/Iced Lattes/IMG-5937.jpg';
+import icedLattes4
+  from '../imgs/menu/Drinks/Cold Coffees/Iced Lattes/IMG-5938.jpg';
+import icedLattes5
+  from '../imgs/menu/Drinks/Cold Coffees/Iced Lattes/IMG-5939.jpg';
+import icedLattes6
+  from '../imgs/menu/Drinks/Cold Coffees/Iced Lattes/IMG-5940.jpg';
+import icedMacchiatos1
+  from '../imgs/menu/Drinks/Cold Coffees/Iced Macchiatos/IMG-5941.jpg';
+import icedMacchiatos2
+  from '../imgs/menu/Drinks/Cold Coffees/Iced Macchiatos/IMG-5942.jpg';
+import icedMochas1
+  from '../imgs/menu/Drinks/Cold Coffees/Iced Mochas/IMG-5943.jpg';
+import icedMochas2
+  from '../imgs/menu/Drinks/Cold Coffees/Iced Mochas/IMG-5944.jpg';
+import icedMochas3
+  from '../imgs/menu/Drinks/Cold Coffees/Iced Mochas/IMG-5945.jpg';
+
+
 
 
 export const BREWED_COFFEE = {
@@ -117,25 +250,20 @@ export const BREWED_COFFEE = {
   roastPike,
   veranda,
 };
-
 export const AMERICANO = {
   americano,
 };
-
-export const CAPAC = {
-  cappac,
+export const CAPPUCCINO = {
+  cappuccino,
 };
-
 export const ESPRESSO = {
   espresso1,
   espresso2,
 };
-
 export const FLAT_WHITE = {
   flatWhites1,
   flatWhites2,
 };
-
 export const LATTES = {
   lattes1,
   lattes2,
@@ -144,12 +272,10 @@ export const LATTES = {
   lattes5,
   lattes6,
 };
-
 export const MACCHITOS = {
   macchitos1,
   macchitos2,
 };
-
 export const MOCHAS = {
   mochas1,
   mochas2,
@@ -202,3 +328,93 @@ export const HERBALTEAS = {
   herbalTeas1,
   herbalTeas2,
 };
+export const HOTCHOCOLATES = {
+  hotChocolates1,
+  hotChocolates2,
+};
+export const JUICE = {
+  juice1,
+  juice2,
+};
+export const STREAMERS = {
+  steamers1,
+  steamers2,
+  steamers3,
+};
+export const COFFEE_FRAPPUCCINO = {
+  coffeeFrappuccino1,
+  coffeeFrappuccino2,
+  coffeeFrappuccino3,
+  coffeeFrappuccino4,
+  coffeeFrappuccino5,
+  coffeeFrappuccino6,
+  coffeeFrappuccino7,
+  coffeeFrappuccino8,
+  coffeeFrappuccino9,
+  coffeeFrappuccino10,
+  coffeeFrappuccino11,
+};
+export const CREME_FRAPPUCCINO = {
+  cremeFrappuccino1,
+  cremeFrappuccino2,
+  cremeFrappuccino3,
+  cremeFrappuccino4,
+  cremeFrappuccino5,
+  cremeFrappuccino6,
+  cremeFrappuccino7,
+  cremeFrappuccino8,
+  cremeFrappuccino9,
+  cremeFrappuccino10,
+};
+export const COLD_BREWS = {
+  coldBrews1,
+  coldBrews2,
+  coldBrews3,
+  coldBrews4,
+  coldBrews5,
+  coldBrews6,
+};
+export const NITRO_COLD_BREWS = {
+  nitroColdBrews1,
+  nitroColdBrews2,
+};
+export const ICED_AMERICANO = {
+  icedAmericano,
+};
+export const ICED_COFFEES = {
+  icedCoffees1,
+  icedCoffees2,
+  icedCoffees3,
+};
+export const ICED_SHAKEN_ESPRESSO = {
+  icedShakenEspresso1,
+  icedShakenEspresso2,
+  icedShakenEspresso3,
+  icedShakenEspresso4,
+};
+export const ICED_FLAT_WHITES = {
+  icedFlatWhites1,
+  icedFlatWhites2,
+};
+export const ICED_LATTES = {
+  icedLattes1,
+  icedLattes2,
+  icedLattes3,
+  icedLattes4,
+  icedLattes5,
+  icedLattes6,
+};
+export const ICED_MACCHIATOS = {
+  icedMacchiatos1,
+  icedMacchiatos2,
+};
+export const ICED_MOCHAS = {
+  icedMochas1,
+  icedMochas2,
+  icedMochas3,
+};
+
+
+
+
+

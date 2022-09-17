@@ -6,8 +6,10 @@ import coffee from '../imgs/main-content/coffe.png';
 import icon from '../imgs/menu/americano.svg';
 import {
   BREWED_COFFEE,
-  AMERICANO, CAPAC,
-  ESPRESSO, FLAT_WHITE,
+  AMERICANO,
+  CAPPUCCINO,
+  ESPRESSO,
+  FLAT_WHITE,
   LATTES,
   MACCHITOS,
   MOCHAS,
@@ -17,6 +19,20 @@ import {
   BLACKTEAS,
   GREENTEAS,
   HERBALTEAS,
+  HOTCHOCOLATES,
+  JUICE,
+  STREAMERS,
+  COFFEE_FRAPPUCCINO,
+  CREME_FRAPPUCCINO,
+  COLD_BREWS,
+  NITRO_COLD_BREWS,
+  ICED_AMERICANO,
+  ICED_COFFEES,
+  ICED_SHAKEN_ESPRESSO,
+  ICED_FLAT_WHITES,
+  ICED_LATTES,
+  ICED_MACCHIATOS,
+  ICED_MOCHAS,
 } from './images';
 
 export const FOOTER_TITLES = {
@@ -67,7 +83,7 @@ export const FOOTER_LISTS = {
 export const MAIN_CONTENT = [
   {
     text: 'Ordering your fall favorites is a snap with the app. ' +
-        'Join Starbucks® Rewards and tap into fall.',
+      'Join Starbucks® Rewards and tap into fall.',
     title: 'Fall at your fingertips',
     direction: 'right',
     buttonText: 'Join now',
@@ -75,7 +91,7 @@ export const MAIN_CONTENT = [
   },
   {
     text: 'Fall favorites return with the blissful Pumpkin Spice ' +
-        'Latte and smooth Pumpkin Cream Cold Brew.',
+      'Latte and smooth Pumpkin Cream Cold Brew.',
     title: 'Welcome home, pumpkin',
     direction: 'left',
     buttonText: 'Learn more',
@@ -83,7 +99,7 @@ export const MAIN_CONTENT = [
   },
   {
     text: 'Try the Apple Crisp Oatmilk Macchiato, ' +
-        'now nondairy and with Starbucks® Blonde Espresso.',
+      'now nondairy and with Starbucks® Blonde Espresso.',
     title: 'Layers of baked apple yum',
     direction: 'right',
     buttonText: 'Learn more',
@@ -91,7 +107,7 @@ export const MAIN_CONTENT = [
   },
   {
     text: 'Choose a comforting classic: Pumpkin Cream Cheese Muffin, ' +
-        'Pumpkin & Pepita Loaf or Pumpkin Scone.',
+      'Pumpkin & Pepita Loaf or Pumpkin Scone.',
     title: 'Picks of the patch',
     direction: 'left',
     buttonText: 'Learn more',
@@ -99,7 +115,7 @@ export const MAIN_CONTENT = [
   },
   {
     text: 'With a new roast spectrum front and center on our coffee bags, ' +
-        'it’s easier than ever to find a taste you love.',
+      'it’s easier than ever to find a taste you love.',
     title: 'The art of the roast',
     direction: 'right',
     buttonText: 'Order now',
@@ -161,30 +177,38 @@ export const FILTERS = [
   },
 ];
 export const CATEGORIES = {
+
   ['Menu']: [
     {
       title: 'Drinks',
       url: icon,
       listOfItems: [
-        {title: 'Hot Coffees',
+        {
+          title: 'Hot Coffees',
           icon: icon,
         },
-        {title: 'Hot Teas',
+        {
+          title: 'Hot Teas',
           icon: icon,
         },
-        {title: 'Hot Drinks',
+        {
+          title: 'Hot Drinks',
           icon: icon,
         },
-        {title: 'Frappuccino® Blended Beverages',
+        {
+          title: 'Frappuccino® Blended Beverages',
           icon: icon,
         },
-        {title: 'Cold Coffees',
+        {
+          title: 'Cold Coffees',
           icon: icon,
         },
-        {title: 'Iced Teas',
+        {
+          title: 'Iced Teas',
           icon: icon,
         },
-        {title: 'Cold Drinks',
+        {
+          title: 'Cold Drinks',
           icon: icon,
         },
       ],
@@ -193,19 +217,24 @@ export const CATEGORIES = {
       title: 'Food',
       url: icon,
       listOfItems: [
-        {title: 'Hot Breakfast',
+        {
+          title: 'Hot Breakfast',
           icon: icon,
         },
-        {title: 'Bakery',
+        {
+          title: 'Bakery',
           icon: icon,
         },
-        {title: 'Lunch',
+        {
+          title: 'Lunch',
           icon: icon,
         },
-        {title: 'Snacks & Sweets',
+        {
+          title: 'Snacks & Sweets',
           icon: icon,
         },
-        {title: 'Oatmeal & Yogurt',
+        {
+          title: 'Oatmeal & Yogurt',
           icon: icon,
         },
       ],
@@ -214,10 +243,12 @@ export const CATEGORIES = {
       title: 'At Home Coffee',
       url: icon,
       listOfItems: [
-        {title: 'Whole Bean',
+        {
+          title: 'Whole Bean',
           icon: icon,
         },
-        {title: 'VIA® Instant',
+        {
+          title: 'VIA® Instant',
           icon: icon,
         },
       ],
@@ -226,19 +257,24 @@ export const CATEGORIES = {
       title: 'Merchandise',
       url: icon,
       listOfItems: [
-        {title: 'Cold Cups',
+        {
+          title: 'Cold Cups',
           icon: icon,
         },
-        {title: 'Tumblers',
+        {
+          title: 'Tumblers',
           icon: icon,
         },
-        {title: 'Mugs',
+        {
+          title: 'Mugs',
           icon: icon,
         },
-        {title: 'Water Bottles',
+        {
+          title: 'Water Bottles',
           icon: icon,
         },
-        {title: 'Other',
+        {
+          title: 'Other',
           icon: icon,
         },
       ],
@@ -247,13 +283,16 @@ export const CATEGORIES = {
       title: 'Gift Cards',
       url: icon,
       listOfItems: [
-        {title: 'Happy Birthday',
+        {
+          title: 'Happy Birthday',
           icon: icon,
         },
-        {title: 'Thank You',
+        {
+          title: 'Thank You',
           icon: icon,
         },
-        {title: 'Traditional',
+        {
+          title: 'Traditional',
           icon: icon,
         },
       ],
@@ -264,7 +303,8 @@ export const CATEGORIES = {
       title: 'Americanos',
       url: icon,
       listOfItems: [
-        {title: 'Caffè Americano',
+        {
+          title: 'Caffè Americano',
           icon: AMERICANO.americano,
         },
       ],
@@ -273,19 +313,24 @@ export const CATEGORIES = {
       title: 'Brewed Coffees',
       url: icon,
       listOfItems: [
-        {title: 'Veranda Blend®',
+        {
+          title: 'Veranda Blend®',
           icon: BREWED_COFFEE.veranda,
         },
-        {title: 'Caffè Misto',
+        {
+          title: 'Caffè Misto',
           icon: BREWED_COFFEE.caffeMisto,
         },
-        {title: 'Featured Starbucks® Dark Roast Coffee',
+        {
+          title: 'Featured Starbucks® Dark Roast Coffee',
           icon: BREWED_COFFEE.darkRoast,
         },
-        {title: 'Featured Medium Roast - Pike Place® Roast',
+        {
+          title: 'Featured Medium Roast - Pike Place® Roast',
           icon: BREWED_COFFEE.roastPike,
         },
-        {title: 'Decaf Pike Place® Roast',
+        {
+          title: 'Decaf Pike Place® Roast',
           icon: BREWED_COFFEE.roast,
         },
       ],
@@ -294,8 +339,9 @@ export const CATEGORIES = {
       title: 'Cappuccinos',
       url: icon,
       listOfItems: [
-        {title: 'Cappuccino',
-          icon: CAPAC.cappac,
+        {
+          title: 'Cappuccino',
+          icon: CAPPUCCINO.cappuccino,
         },
       ],
     },
@@ -303,10 +349,12 @@ export const CATEGORIES = {
       title: 'Espresso Shots',
       url: icon,
       listOfItems: [
-        {title: 'Espresso',
+        {
+          title: 'Espresso',
           icon: ESPRESSO.espresso2,
         },
-        {title: 'Espresso Con Panna',
+        {
+          title: 'Espresso Con Panna',
           icon: ESPRESSO.espresso1,
         },
       ],
@@ -315,10 +363,12 @@ export const CATEGORIES = {
       title: 'Flat Whites',
       url: icon,
       listOfItems: [
-        {title: 'Flat White',
+        {
+          title: 'Flat White',
           icon: FLAT_WHITE.flatWhites1,
         },
-        {title: 'Honey Almondmilk Flat White',
+        {
+          title: 'Honey Almondmilk Flat White',
           icon: FLAT_WHITE.flatWhites2,
         },
       ],
@@ -327,22 +377,28 @@ export const CATEGORIES = {
       title: 'Lattes',
       url: icon,
       listOfItems: [
-        {title: 'Pumpkin Spice Latte',
+        {
+          title: 'Pumpkin Spice Latte',
           icon: LATTES.lattes1,
         },
-        {title: 'Caffè Latte',
+        {
+          title: 'Caffè Latte',
           icon: LATTES.lattes2,
         },
-        {title: 'Cinnamon Dolce Latte',
+        {
+          title: 'Cinnamon Dolce Latte',
           icon: LATTES.lattes3,
         },
-        {title: 'Starbucks Reserve® Latte',
+        {
+          title: 'Starbucks Reserve® Latte',
           icon: LATTES.lattes4,
         },
-        {title: 'Starbucks Reserve® Hazelnut Bianco Latte',
+        {
+          title: 'Starbucks Reserve® Hazelnut Bianco Latte',
           icon: LATTES.lattes5,
         },
-        {title: 'Starbucks® Blonde Vanilla Latte',
+        {
+          title: 'Starbucks® Blonde Vanilla Latte',
           icon: LATTES.lattes6,
         },
       ],
@@ -351,10 +407,12 @@ export const CATEGORIES = {
       title: 'Macchiatos',
       url: icon,
       listOfItems: [
-        {title: 'Caramel Macchiato',
+        {
+          title: 'Caramel Macchiato',
           icon: MACCHITOS.macchitos1,
         },
-        {title: 'Espresso Macchiato',
+        {
+          title: 'Espresso Macchiato',
           icon: MACCHITOS.macchitos2,
         },
       ],
@@ -363,13 +421,16 @@ export const CATEGORIES = {
       title: 'Mochas',
       url: icon,
       listOfItems: [
-        {title: 'Caffè Mocha',
+        {
+          title: 'Caffè Mocha',
           icon: MOCHAS.mochas1,
         },
-        {title: 'Starbucks Reserve® Dark Chocolate Mocha',
+        {
+          title: 'Starbucks Reserve® Dark Chocolate Mocha',
           icon: MOCHAS.mochas2,
         },
-        {title: 'White Chocolate Mocha',
+        {
+          title: 'White Chocolate Mocha',
           icon: MOCHAS.mochas3,
         },
       ],
@@ -378,70 +439,92 @@ export const CATEGORIES = {
       title: 'Clover® Brewed Coffees',
       url: icon,
       listOfItems: [
-        {title: 'Hawai‘i Ka‘u Clover® Starbucks Reserve®',
+        {
+          title: 'Hawai‘i Ka‘u Clover® Starbucks Reserve®',
           icon: CLOVER.clover1,
         },
-        {title: 'Sun-Dried Zambia Ngoli Estate Clover® Starbucks Reserve®',
+        {
+          title: 'Sun-Dried Zambia Ngoli Estate Clover® Starbucks Reserve®',
           icon: CLOVER.clover2,
         },
-        {title: 'Vietnam Da Lat Clover® Starbucks Reserve®',
+        {
+          title: 'Vietnam Da Lat Clover® Starbucks Reserve®',
           icon: CLOVER.clover3,
         },
-        {title: 'Clover® Starbucks Reserve® Costa Rica Naranjo',
+        {
+          title: 'Clover® Starbucks Reserve® Costa Rica Naranjo',
           icon: CLOVER.clover4,
         },
-        {title: 'Rwanda Hingakawa Clover® Starbucks Reserve®',
+        {
+          title: 'Rwanda Hingakawa Clover® Starbucks Reserve®',
           icon: CLOVER.clover5,
         },
-        {title: 'Clover Brewed® Pike Place® Roast',
+        {
+          title: 'Clover Brewed® Pike Place® Roast',
           icon: CLOVER.clover6,
         },
-        {title: 'Organic Yukon Blend® Clover®',
+        {
+          title: 'Organic Yukon Blend® Clover®',
           icon: CLOVER.clover7,
         },
-        {title: 'Clover Brewed® Gold Coast Blend®',
+        {
+          title: 'Clover Brewed® Gold Coast Blend®',
           icon: CLOVER.clover8,
         },
-        {title: 'Clover Brewed® Breakfast Blend',
+        {
+          title: 'Clover Brewed® Breakfast Blend',
           icon: CLOVER.clover9,
         },
-        {title: 'Kenya Clover®',
+        {
+          title: 'Kenya Clover®',
           icon: CLOVER.clover7,
         },
-        {title: 'Veranda Blend® Clover®',
+        {
+          title: 'Veranda Blend® Clover®',
           icon: CLOVER.clover7,
         },
-        {title: 'Clover Brewed® Starbucks Willow Blend',
+        {
+          title: 'Clover Brewed® Starbucks Willow Blend',
           icon: CLOVER.clover7,
         },
-        {title: 'Decaf Sumatra Clover®',
+        {
+          title: 'Decaf Sumatra Clover®',
           icon: CLOVER.clover7,
         },
-        {title: 'Caffé Verona® Clover®',
+        {
+          title: 'Caffé Verona® Clover®',
           icon: CLOVER.clover7,
         },
-        {title: 'Clover Brewed® Decaf Pike Place® Roast',
+        {
+          title: 'Clover Brewed® Decaf Pike Place® Roast',
           icon: CLOVER.clover7,
         },
-        {title: 'Espresso Roast Clover®',
+        {
+          title: 'Espresso Roast Clover®',
           icon: CLOVER.clover7,
         },
-        {title: 'Decaf Espresso Roast Clover®',
+        {
+          title: 'Decaf Espresso Roast Clover®',
           icon: CLOVER.clover7,
         },
-        {title: 'Ethiopia Clover®',
+        {
+          title: 'Ethiopia Clover®',
           icon: CLOVER.clover7,
         },
-        {title: 'French Roast Clover®',
+        {
+          title: 'French Roast Clover®',
           icon: CLOVER.clover7,
         },
-        {title: 'Italian Roast Clover®',
+        {
+          title: 'Italian Roast Clover®',
           icon: CLOVER.clover7,
         },
-        {title: 'Komodo Dragon Clover®',
+        {
+          title: 'Komodo Dragon Clover®',
           icon: CLOVER.clover7,
         },
-        {title: 'Sumatra Clover®',
+        {
+          title: 'Sumatra Clover®',
           icon: CLOVER.clover7,
         },
       ],
@@ -450,16 +533,20 @@ export const CATEGORIES = {
       title: 'Coffee Travelers',
       url: icon,
       listOfItems: [
-        {title: 'Coffee Traveler - Veranda Blend®',
+        {
+          title: 'Coffee Traveler - Veranda Blend®',
           icon: TRAVELERS.coffeeTravelers,
         },
-        {title: 'Coffee Traveler - Dark Roast',
+        {
+          title: 'Coffee Traveler - Dark Roast',
           icon: TRAVELERS.coffeeTravelers,
         },
-        {title: 'Coffee Traveler - Pike Place® Roast',
+        {
+          title: 'Coffee Traveler - Pike Place® Roast',
           icon: TRAVELERS.coffeeTravelers,
         },
-        {title: 'Coffee Traveler - Decaf Pike Place® Roast',
+        {
+          title: 'Coffee Traveler - Decaf Pike Place® Roast',
           icon: TRAVELERS.coffeeTravelers,
         },
       ],
@@ -470,10 +557,12 @@ export const CATEGORIES = {
       title: 'Chai Teas',
       url: icon,
       listOfItems: [
-        {title: 'Chai Tea Latte',
+        {
+          title: 'Chai Tea Latte',
           icon: CHAITEAS.chaiTeas1,
         },
-        {title: 'Chai Tea',
+        {
+          title: 'Chai Tea',
           icon: CHAITEAS.chaiTeas1,
         },
       ],
@@ -482,16 +571,20 @@ export const CATEGORIES = {
       title: 'Black Teas',
       url: icon,
       listOfItems: [
-        {title: 'Earl Grey Tea',
+        {
+          title: 'Earl Grey Tea',
           icon: BLACKTEAS.blackTeas1,
         },
-        {title: 'Teavana® London Fog Tea Latte',
+        {
+          title: 'Teavana® London Fog Tea Latte',
           icon: BLACKTEAS.blackTeas2,
         },
-        {title: 'Royal English Breakfast Tea',
+        {
+          title: 'Royal English Breakfast Tea',
           icon: BLACKTEAS.blackTeas3,
         },
-        {title: 'Royal English Breakfast Tea Latte',
+        {
+          title: 'Royal English Breakfast Tea Latte',
           icon: BLACKTEAS.blackTeas4,
         },
       ],
@@ -500,16 +593,20 @@ export const CATEGORIES = {
       title: 'Green Teas',
       url: icon,
       listOfItems: [
-        {title: 'Emperor’s Clouds & Mist®',
+        {
+          title: 'Emperor’s Clouds & Mist®',
           icon: GREENTEAS.greenTeas1,
         },
-        {title: 'Matcha Tea Latte',
+        {
+          title: 'Matcha Tea Latte',
           icon: GREENTEAS.greenTeas2,
         },
-        {title: 'Honey Citrus Mint Tea',
+        {
+          title: 'Honey Citrus Mint Tea',
           icon: GREENTEAS.greenTeas3,
         },
-        {title: 'Jade Citrus Mint® Brewed Tea',
+        {
+          title: 'Jade Citrus Mint® Brewed Tea',
           icon: GREENTEAS.greenTeas4,
         },
       ],
@@ -518,10 +615,12 @@ export const CATEGORIES = {
       title: 'Herbal Teas',
       url: icon,
       listOfItems: [
-        {title: 'Mint Majesty®',
+        {
+          title: 'Mint Majesty®',
           icon: HERBALTEAS.herbalTeas1,
         },
-        {title: 'Peach Tranquility®',
+        {
+          title: 'Peach Tranquility®',
           icon: HERBALTEAS.herbalTeas2,
         },
       ],
@@ -532,11 +631,13 @@ export const CATEGORIES = {
       title: 'Hot Chocolates',
       url: icon,
       listOfItems: [
-        {title: 'Hot Chocolate',
-          icon: icon,
+        {
+          title: 'Hot Chocolate',
+          icon: HOTCHOCOLATES.hotChocolates1,
         },
-        {title: 'White Hot Chocolate',
-          icon: icon,
+        {
+          title: 'White Hot Chocolate',
+          icon: HOTCHOCOLATES.hotChocolates2,
         },
       ],
     },
@@ -544,11 +645,13 @@ export const CATEGORIES = {
       title: 'Juice',
       url: icon,
       listOfItems: [
-        {title: 'Caramel Apple Spice',
-          icon: icon,
+        {
+          title: 'Caramel Apple Spice',
+          icon: JUICE.juice1,
         },
-        {title: 'Steamed Apple Juice',
-          icon: icon,
+        {
+          title: 'Steamed Apple Juice',
+          icon: JUICE.juice2,
         },
       ],
     },
@@ -556,131 +659,391 @@ export const CATEGORIES = {
       title: 'Steamers',
       url: icon,
       listOfItems: [
-        {title: 'Pumpkin Spice Crème',
-          icon: icon,
+        {
+          title: 'Pumpkin Spice Crème',
+          icon: STREAMERS.steamers1,
         },
-        {title: 'Steamed Milk',
-          icon: icon,
+        {
+          title: 'Steamed Milk',
+          icon: STREAMERS.steamers2,
         },
-        {title: 'Vanilla Crème',
-          icon: icon,
+        {
+          title: 'Vanilla Crème',
+          icon: STREAMERS.steamers3,
         },
       ],
     },
   ],
-  // ['Frappuccino® Blended Beverages']: [
-  //   {
-  //     title: 'Cold Brews',
-  //     url: icon,
-  //     listOfItems: [
-  //       'Pumpkin Cream Cold Brew',
-  //       'Chocolate Cream Cold Brew',
-  //       'Salted Caramel Cream Cold Brew',
-  //       'Starbucks® Cold Brew Coffee',
-  //       'Vanilla Sweet Cream Cold Brew',
-  //       'Starbucks® Cold Brew Coffee with Milk',
-  //     ],
-  //   },
-  //   {
-  //     title: 'Nitro Cold Brews',
-  //     url: icon,
-  //     listOfItems: [
-  //       'Nitro Cold Brew',
-  //       'Vanilla Sweet Cream Nitro Cold Brew',
-  //     ],
-  //   },
-  //   {
-  //     title: 'Iced Americano',
-  //     url: icon,
-  //     listOfItems: [
-  //       'Iced Caffè Americano',
-  //     ],
-  //   },
-  //   {
-  //     title: 'Iced Coffees',
-  //     url: icon,
-  //     listOfItems: [
-  //       'Iced Coffee',
-  //       'Iced Coffee with Milk',
-  //       'Iced Espresso',
-  //     ],
-  //   },
-  //   {
-  //     title: 'Iced Shaken Espresso',
-  //     url: icon,
-  //     listOfItems: [
-  //       'Iced Toasted Vanilla Oatmilk Shaken Espresso',
-  //       'Iced Brown Sugar Oatmilk Shaken Espresso',
-  //       'Iced Chocolate Almondmilk Shaken Espresso',
-  //       'Iced Shaken Espresso',
-  //     ],
-  //   },
-  //   {
-  //     title: 'Iced Flat Whites',
-  //     url: icon,
-  //     listOfItems: [
-  //       'Iced Flat White',
-  //       'Iced Honey Almondmilk Flat White',
-  //     ],
-  //   },
-  //   {
-  //     title: 'Iced Lattes',
-  //     url: icon,
-  //     listOfItems: [
-  //       'Iced Pumpkin Spice Latte',
-  //       'Starbucks Reserve® Iced Latte',
-  //       'Starbucks Reserve® Iced Hazelnut Bianco Latte',
-  //       'Iced Caffè Latte',
-  //       'Iced Cinnamon Dolce Latte',
-  //       'Iced Starbucks® Blonde Vanilla Latte',
-  //     ],
-  //   },
-  //   {
-  //     title: 'Iced Macchiatos',
-  //     url: icon,
-  //     listOfItems: [
-  //       'Iced Apple Crisp Oatmilk Macchiato',
-  //       'Iced Caramel Macchiato',
-  //     ],
-  //   },
-  //   {
-  //     title: 'Iced Mochas',
-  //     url: icon,
-  //     listOfItems: [
-  //       'Iced White Chocolate Mocha',
-  //       'Iced Caffè Mocha',
-  //       'Starbucks Reserve® Iced Dark Chocolate Mocha',
-  //     ],
-  //   },
-  //   {
-  //     title: 'Iced Clover® Brewed Coffees',
-  //     url: icon,
-  //     listOfItems: [
-  //       'Hawai‘i Ka‘u Clover® Starbucks Reserve®',
-  //       'Sun-Dried Zambia Ngoli Estate Clover® Starbucks Reserve®',
-  //       'Vietnam Da Lat Clover® Starbucks Reserve®',
-  //       'Clover® Starbucks Reserve® Costa Rica Naranjo',
-  //       'Rwanda Hingakawa Clover® Starbucks Reserve®',
-  //       'Clover Brewed® Pike Place® Roast',
-  //       'Organic Yukon Blend® Clover®',
-  //       'Clover Brewed® Gold Coast Blend®',
-  //       'Clover Brewed® Breakfast Blend',
-  //       'Kenya Clover®',
-  //       'Veranda Blend® Clover®',
-  //       'Clover Brewed® Starbucks Willow Blend',
-  //       'Decaf Sumatra Clover®',
-  //       'Caffé Verona® Clover®',
-  //       'Clover Brewed® Decaf Pike Place® Roast',
-  //       'Espresso Roast Clover®',
-  //       'Decaf Espresso Roast Clover®',
-  //       'Ethiopia Clover®',
-  //       'French Roast Clover®',
-  //       'Italian Roast Clover®',
-  //       'Komodo Dragon Clover®',
-  //       'Sumatra Clover®',
-  //     ],
-  //   },
-  // ],
+  ['Frappuccino® Blended Beverages']: [
+    {
+      title: 'Coffee Frappuccino',
+      url: icon,
+      listOfItems: [
+        {
+          title: 'Pumpkin Spice Frappuccino® Blended Beverage',
+          icon: COFFEE_FRAPPUCCINO.coffeeFrappuccino1,
+        },
+        {
+          title: 'Apple Crisp Oatmilk Frappuccino® Blended Beverage',
+          icon: COFFEE_FRAPPUCCINO.coffeeFrappuccino2,
+        },
+        {
+          title: 'Mocha Cookie Crumble Frappuccino®',
+          icon: COFFEE_FRAPPUCCINO.coffeeFrappuccino3,
+        },
+        {
+          title: 'Caramel Ribbon Crunch Frappuccino® Blended Beverage',
+          icon: COFFEE_FRAPPUCCINO.coffeeFrappuccino4,
+        },
+        {
+          title: 'Espresso Frappuccino® Blended Beverage',
+          icon: COFFEE_FRAPPUCCINO.coffeeFrappuccino5,
+        },
+        {
+          title: 'Caffè Vanilla Frappuccino® Blended Beverage',
+          icon: COFFEE_FRAPPUCCINO.coffeeFrappuccino6,
+        },
+        {
+          title: 'Caramel Frappuccino® Blended Beverage',
+          icon: COFFEE_FRAPPUCCINO.coffeeFrappuccino7,
+        },
+        {
+          title: 'Coffee Frappuccino® Blended Beverage',
+          icon: COFFEE_FRAPPUCCINO.coffeeFrappuccino8,
+        },
+        {
+          title: 'Mocha Frappuccino® Blended Beverage',
+          icon: COFFEE_FRAPPUCCINO.coffeeFrappuccino9,
+        },
+        {
+          title: 'Java Chip Frappuccino® Blended Beverage',
+          icon: COFFEE_FRAPPUCCINO.coffeeFrappuccino10,
+        },
+        {
+          title: 'White Chocolate Mocha Frappuccino® Blended Beverage',
+          icon: COFFEE_FRAPPUCCINO.coffeeFrappuccino11,
+        },
+
+      ],
+    },
+    {
+      title: 'Creme Frappuccino',
+      url: icon,
+      listOfItems: [
+        {
+          title: 'Pumpkin Spice Crème Frappuccino® Blended Beverage',
+          icon: CREME_FRAPPUCCINO.cremeFrappuccino1,
+        },
+        {
+          title: 'Apple Crisp Oatmilk Crème Frappuccino® Blended Beverage',
+          icon: CREME_FRAPPUCCINO.cremeFrappuccino2,
+        },
+        {
+          title: 'Chocolate Cookie Crumble Crème Frappuccino®',
+          icon: CREME_FRAPPUCCINO.cremeFrappuccino3,
+        },
+        {
+          title: 'Caramel Ribbon Crunch Crème Frappuccino® Blended Beverage',
+          icon: CREME_FRAPPUCCINO.cremeFrappuccino4,
+        },
+        {
+          title: 'Strawberry Crème Frappuccino® Blended Beverage',
+          icon: CREME_FRAPPUCCINO.cremeFrappuccino5,
+        },
+        {
+          title: 'Chai Crème Frappuccino®',
+          icon: CREME_FRAPPUCCINO.cremeFrappuccino6,
+        },
+        {
+          title: 'Double Chocolaty Chip Crème Frappuccino® Blended Beverage',
+          icon: CREME_FRAPPUCCINO.cremeFrappuccino7,
+        },
+        {
+          title: 'Matcha Crème Frappuccino® Blended Beverage',
+          icon: CREME_FRAPPUCCINO.cremeFrappuccino8,
+        },
+        {
+          title: 'Vanilla Bean Crème Frappuccino® Blended Crème',
+          icon: CREME_FRAPPUCCINO.cremeFrappuccino9,
+        },
+        {
+          title: 'White Chocolate Crème Frappuccino® Blended Beverage',
+          icon: CREME_FRAPPUCCINO.cremeFrappuccino10,
+        },
+      ],
+    },
+  ],
+  ['Cold Coffees']: [
+    {
+      title: 'Cold Brews',
+      url: icon,
+      listOfItems: [
+        {
+          title: 'Pumpkin Cream Cold Brew',
+          icon: COLD_BREWS.coldBrews1,
+        },
+        {
+          title: 'Chocolate Cream Cold Brew',
+          icon: COLD_BREWS.coldBrews2,
+        },
+        {
+          title: 'Salted Caramel Cream Cold Brew',
+          icon: COLD_BREWS.coldBrews3,
+        },
+        {
+          title: 'Starbucks® Cold Brew Coffee',
+          icon: COLD_BREWS.coldBrews4,
+        },
+        {
+          title: 'Vanilla Sweet Cream Cold Brew',
+          icon: COLD_BREWS.coldBrews5,
+        },
+        {
+          title: 'Starbucks® Cold Brew Coffee with Milk',
+          icon: COLD_BREWS.coldBrews6,
+        },
+      ],
+    },
+    {
+      title: 'Nitro Cold Brews',
+      url: icon,
+      listOfItems: [
+        {
+          title: 'Nitro Cold Brew',
+          icon: NITRO_COLD_BREWS.nitroColdBrews1,
+        },
+        {
+          title: 'Vanilla Sweet Cream Nitro Cold Brew',
+          icon: NITRO_COLD_BREWS.nitroColdBrews2,
+        },
+      ],
+    },
+    {
+      title: 'Iced Americano',
+      url: icon,
+      listOfItems: [
+        {
+          title: 'Iced Caffè Americano',
+          icon: ICED_AMERICANO.icedAmericano,
+        },
+      ],
+    },
+    {
+      title: 'Iced Coffees',
+      url: icon,
+      listOfItems: [
+        {
+          title: 'Iced Coffee',
+          icon: ICED_COFFEES.icedCoffees1,
+        },
+        {
+          title: 'Iced Coffee with Milk',
+          icon: ICED_COFFEES.icedCoffees2,
+        },
+        {
+          title: 'Iced Espresso',
+          icon: ICED_COFFEES.icedCoffees3,
+        },
+      ],
+    },
+    {
+      title: 'Iced Shaken Espresso',
+      url: icon,
+      listOfItems: [
+        {
+          title: 'Iced Toasted Vanilla Oatmilk Shaken Espresso',
+          icon: ICED_SHAKEN_ESPRESSO.icedShakenEspresso1,
+        },
+        {
+          title: 'Iced Brown Sugar Oatmilk Shaken Espresso',
+          icon: ICED_SHAKEN_ESPRESSO.icedShakenEspresso2,
+        },
+        {
+          title: 'Iced Chocolate Almondmilk Shaken Espresso',
+          icon: ICED_SHAKEN_ESPRESSO.icedShakenEspresso3,
+        },
+        {
+          title: 'Iced Shaken Espresso',
+          icon: ICED_SHAKEN_ESPRESSO.icedShakenEspresso4,
+        },
+      ],
+    },
+    {
+      title: 'Iced Flat Whites',
+      url: icon,
+      listOfItems: [
+        {
+          title: 'Iced Flat White',
+          icon: ICED_FLAT_WHITES.icedFlatWhites1,
+        },
+        {
+          title: 'Iced Honey Almondmilk Flat White',
+          icon: ICED_FLAT_WHITES.icedFlatWhites2,
+        },
+      ],
+    },
+    {
+      title: 'Iced Lattes',
+      url: icon,
+      listOfItems: [
+        {
+          title: 'Iced Pumpkin Spice Latte',
+          icon: ICED_LATTES.icedLattes1,
+        },
+        {
+          title: 'Starbucks Reserve® Iced Latte',
+          icon: ICED_LATTES.icedLattes2,
+        },
+        {
+          title: 'Starbucks Reserve® Iced Hazelnut Bianco Latte',
+          icon: ICED_LATTES.icedLattes3,
+        },
+        {
+          title: 'Iced Caffè Latte',
+          icon: ICED_LATTES.icedLattes4,
+        },
+        {
+          title: 'Iced Cinnamon Dolce Latte',
+          icon: ICED_LATTES.icedLattes5,
+        },
+        {
+          title: 'Iced Starbucks® Blonde Vanilla Latte',
+          icon: ICED_LATTES.icedLattes6,
+        },
+      ],
+    },
+    {
+      title: 'Iced Macchiatos',
+      url: icon,
+      listOfItems: [
+        {
+          title: 'Iced Apple Crisp Oatmilk Macchiato',
+          icon: ICED_MACCHIATOS.icedMacchiatos1,
+        },
+        {
+          title: 'Iced Caramel Macchiato',
+          icon: ICED_MACCHIATOS.icedMacchiatos2,
+        },
+      ],
+    },
+    {
+      title: 'Iced Mochas',
+      url: icon,
+      listOfItems: [
+        {
+          title: 'Iced White Chocolate Mocha',
+          icon: ICED_MOCHAS.icedMochas1,
+        },
+        {
+          title: 'Iced Caffè Mocha',
+          icon: ICED_MOCHAS.icedMochas2,
+        },
+        {
+          title: 'Starbucks Reserve® Iced Dark Chocolate Mocha',
+          icon: ICED_MOCHAS.icedMochas3,
+        },
+      ],
+    },
+    {
+      title: 'Iced Clover® Brewed Coffees',
+      url: icon,
+      listOfItems: [
+        {
+          title: 'Hawai‘i Ka‘u Clover® Starbucks Reserve®',
+          icon: CLOVER.clover1,
+        },
+        {
+          title: 'Iced Caffè MochaSun-Dried Zambia Ngoli® Starbucks Reserve®',
+          icon: CLOVER.clover2,
+        },
+        {
+          title: 'Vietnam Da Lat Clover® Starbucks Reserve®',
+          icon: CLOVER.clover3,
+        },
+        {
+          title: 'Clover® Starbucks Reserve® Costa Rica Naranjo',
+          icon: CLOVER.clover4,
+        },
+        {
+          title: 'Rwanda Hingakawa Clover® Starbucks Reserve®',
+          icon: CLOVER.clover5,
+        },
+        {
+          title: 'Clover Brewed® Pike Place® Roast',
+          icon: CLOVER.clover6,
+        },
+        {
+          title: 'Organic Yukon Blend® Clover®',
+          icon: CLOVER.clover7,
+        },
+        {
+          title: 'Clover Brewed® Gold Coast Blend®',
+          icon: CLOVER.clover8,
+        },
+        {
+          title: 'Clover Brewed® Breakfast Blend',
+          icon: CLOVER.clover9,
+        },
+        {
+          title: 'Kenya Clover®',
+          icon: CLOVER.clover10,
+        },
+        {
+          title: 'Veranda Blend® Clover®',
+          icon: CLOVER.clover11,
+        },
+        {
+          title: 'Clover Brewed® Starbucks Willow Blend',
+          icon: CLOVER.clover12,
+        },
+        {
+          title: 'Decaf Sumatra Clover®',
+          icon: CLOVER.clover13,
+        },
+        {
+          title: 'Caffé Verona® Clover®',
+          icon: CLOVER.clover14,
+        },
+        {
+          title: 'Clover Brewed® Decaf Pike Place® Roast',
+          icon: CLOVER.clover15,
+        },
+        {
+          title: 'Espresso Roast Clover®',
+          icon: CLOVER.clover16,
+        },
+        {
+          title: 'Decaf Espresso Roast Clover®',
+          icon: CLOVER.clover17,
+        },
+        {
+          title: 'Ethiopia Clover®',
+          icon: CLOVER.clover18,
+        },
+        {
+          title: 'French Roast Clover®',
+          icon: CLOVER.clover19,
+        },
+        {
+          title: 'Ethiopia Clover®',
+          icon: CLOVER.clover20,
+        },
+        {
+          title: 'Italian Roast Clover®',
+          icon: CLOVER.clover21,
+        },
+        {
+          title: 'Komodo Dragon Clover®',
+          icon: CLOVER.clover22,
+        },
+        {
+          title: 'Sumatra Clover®',
+          icon: CLOVER.clover22,
+        },
+      ],
+    },
+
+  ],
   // ['Cold Coffees']: [
   //   {
   //     title: 'Cold Brews',
