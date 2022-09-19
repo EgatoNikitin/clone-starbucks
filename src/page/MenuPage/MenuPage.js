@@ -9,7 +9,7 @@ import {Footer} from '../../componentns/Footer/Footer';
 import {FilterList} from '../../componentns/FilterList/FilterList';
 import {MenuCard} from '../../componentns/MenuCard/MenuCard';
 
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import {ItemModal} from '../../componentns/ItemModal/ItemModal';
 
 const MainPage = () => {
@@ -18,6 +18,10 @@ const MainPage = () => {
   const [imgPath, setImgPath] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
   const cardStyle = activeFilter==='Menu' ? 'row' : 'column';
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  }, [activeFilter, selectedItem]);
 
   const itemClickHandler = (path, name) =>{
     setImgPath(path);
@@ -50,7 +54,7 @@ const MainPage = () => {
                         arrayOfItems={el.listOfItems} />;
                     })}
                   </div><div className='menu--container'>
-                    <h2>{activeFilter}</h2>
+                    <h1>{activeFilter}</h1>
                     {CATEGORIES[activeFilter].map((el, index)=> {
                       return <MenuCard
                         cardStyle={cardStyle}
