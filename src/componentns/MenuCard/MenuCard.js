@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import './MenuCard.scss';
 
-
 export const MenuCard = (
     {
       title,
@@ -36,7 +35,6 @@ export const MenuCard = (
 MenuCard.propTypes ={
   title: PropTypes.string,
   arrayOfItems: PropTypes.any,
-  url: PropTypes.any,
   cardStyle: PropTypes.string,
   itemClickHandler: PropTypes.func,
 };

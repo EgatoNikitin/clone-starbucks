@@ -1,35 +1,38 @@
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import {useLocation} from 'react-router-dom';
 import PropTypes from 'prop-types';
+import {noop} from 'lodash';
 
 import starBucksIcon from '../../imgs/starbucks.png';
 import locationPin from '../../imgs/location.svg';
 import './Header.scss';
 import {Buttons} from '../Buttons/Buttons';
 
-export const Header = ({setActiveFilter}) => {
+export const Header = ({setActiveFilter = noop}) => {
   const location = useLocation();
   const headerClassName = location.pathname.includes('/menu') ?
   'header no-margin' : 'header';
   return (
     <header className={headerClassName}>
-      <Link to='/'>
+      <NavLink to='/'>
         <img
           src={starBucksIcon}
           alt='starbucks icon'
           className='header-icon' />
-      </Link>
+      </NavLink>
       <div className='header--wrapper'>
 
         <div className='header--right'>
           <nav className='header--navigation'>
             <ul className='navigation--list'>
-              <Link to='/menu'>
+              <NavLink to='/menu'
+                className={({isActive}) =>
+                  (isActive ? 'active--tab navLink' : 'navLink')}>
                 <li onClick={()=>
                   setActiveFilter('Menu')
                 }
                 className='navigation--list--item'>menu</li>
-              </Link>
+              </NavLink>
               <li className='navigation--list--item'>rewards</li>
               <li className='navigation--list--item'>gift cards</li>
             </ul>
