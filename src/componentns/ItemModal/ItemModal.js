@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 import './ItemModal.scss';
+import {useState} from 'react';
 
 export const ItemModal = ({
   iconPath,
@@ -8,6 +9,31 @@ export const ItemModal = ({
   itemClick,
   selectedItem,
 })=>{
+  const arrayOfSizes = [
+    {
+      title: 'short',
+      description: '8 fl oz',
+    },
+    {
+      title: 'tall',
+      description: '12 fl oz',
+    },
+    {
+      title: 'grande',
+      description: '16 fl oz',
+    },
+    {
+      title: 'venti',
+      description: '20 fl oz',
+    },
+  ];
+
+  const [activeSize, setActiveSize] = useState(0);
+
+  const handleActiveSize = (index) =>{
+    setActiveSize(index);
+  };
+
   return (
     <div>
       <div className='top--list active--catagori'>
@@ -25,10 +51,23 @@ export const ItemModal = ({
         <div className='customize--column'>
           <h4> Size options</h4>
           <div className='options--list'>
-            <div className='active'/>
-            <div />
-            <div />
-            <div />
+            {
+              arrayOfSizes.map(({title, description}, index) => {
+                const className = activeSize === index ?
+                    `${title} active ` :
+                    `${title}`;
+                return (
+                  <div className='cup--wrapper'
+                    key={index}>
+                    <div
+                      className={className}
+                      onClick={()=> handleActiveSize(index)}/>
+                    <h3 className='cup--title'>{title}</h3>
+                    <div>{description}</div>
+                  </div>
+                );
+              })
+            }
           </div>
         </div>
         <div className='customize--column'>

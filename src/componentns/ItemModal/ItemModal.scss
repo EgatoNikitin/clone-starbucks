@@ -59,34 +59,77 @@
     .options--list{
       display: flex;
       justify-content: space-between;
+      align-items: baseline;
 
       box-sizing: border-box;
-      padding: 30px 100px 0;
+      margin-top: 30px;
+      padding:0 40px;
 
-      div{
-        display: block;
-        width: 50px;
-        height: 50px;
-
-        background: url('../../imgs/cup.svg') no-repeat center;
-        z-index: 2;
+      .cup--wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+        height: 115px;
+        position: relative;
+        z-index: 5;
       }
 
+      .cup--title{
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+      .short{
+        background: url('../../imgs/cup.svg') no-repeat center;
+        background-size: contain;
+        width: 40px;
+        height: 40px;
+        opacity: 0.7;
+      }
+
+      .tall{
+        background: url('../../imgs/cup.svg') no-repeat center;
+        background-size: contain;
+        width: 50px;
+        height: 50px;
+        opacity: 0.7;
+      }
+
+      .grande{
+        background: url('../../imgs/cup.svg') no-repeat center;
+        background-size: contain;
+        width: 55px;
+        height: 55px;
+        opacity: 0.7;
+      }
+      .venti{
+        background: url('../../imgs/cup.svg') no-repeat center;
+        background-size: contain;
+        width: 65px;
+        height: 65px;
+        opacity: 0.7;
+      }
       .active{
-        border: 1px solid colors.$dim_green;
+        border: 2.3px solid colors.$dim_green;
         border-radius: 50%;
         position: relative;
+        opacity: 1;
+        z-index: -1;
+        transition: background-color 0.3s ease;
+        background-color: colors.$light_green;
       }
 
       .active::after{
         content: "";
-        width: 10px;
-        height: 10px;
+        width: 30%;
+        height: 30%;
         background-color: colors.$dark_green;
         border-radius: 50%;
         position: absolute;
-        left: 40%;
-        bottom: 35%;
+        z-index: 1;
+        left: 35%;
+        bottom: 31%;
       }
     }
   }

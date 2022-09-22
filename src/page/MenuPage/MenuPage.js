@@ -13,10 +13,16 @@ import {useEffect, useState} from 'react';
 import {ItemModal} from '../../componentns/ItemModal/ItemModal';
 
 const MainPage = () => {
-  const [activeFilter, setActiveFilter] = useState('Menu');
-  const [selectedItem, setSelectedItem] = useState('');
-  const [imgPath, setImgPath] = useState(null);
-  const [isOpen, setIsOpen] = useState(false);
+  const [activeFilter, setActiveFilter] = useState(
+      sessionStorage.getItem('activeFilter') ||
+      'Menu');
+  const [selectedItem, setSelectedItem] = useState('' ||
+      sessionStorage.getItem('item'));
+  const [imgPath, setImgPath] = useState(sessionStorage.getItem('path'));
+  const [isOpen, setIsOpen] = useState(
+      JSON.parse(sessionStorage.getItem('isOpenItem')) ||
+      false,
+  );
   const cardStyle = activeFilter==='Menu' ? 'row' : 'column';
 
   useEffect(()=>{
@@ -27,10 +33,15 @@ const MainPage = () => {
     setImgPath(path);
     setIsOpen(true);
     setSelectedItem(name);
+    sessionStorage.setItem('item', name);
+    sessionStorage.setItem('path', path);
+    sessionStorage.setItem('isOpenItem', 'true');
   };
 
   const itemCloseClickHanlder = () => {
     setIsOpen(false);
+    sessionStorage.setItem('isOpenItem', 'false');
+    sessionStorage.setItem('activeFilter', activeFilter);
   };
   return (
     <div className='main--wrapper'>

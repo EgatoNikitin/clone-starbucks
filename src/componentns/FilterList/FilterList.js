@@ -17,9 +17,12 @@ export const FilterList = (
         {
           arrayOfItems.map((el, index)=> {
             return (
-              <li onClick={()=>setActiveFilter(el)}
-                className='filter--list-item'
-                key={index+el}>
+              <li onClick={()=>{
+                setActiveFilter(el);
+                sessionStorage.setItem('activeFilter', el);
+              }}
+              className='filter--list-item'
+              key={index+el}>
                 {el}
               </li>
             );
