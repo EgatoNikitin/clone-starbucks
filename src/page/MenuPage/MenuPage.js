@@ -54,7 +54,8 @@ const MainPage = () => {
                 <li className='top--list-item'>Featured</li>
                 <li className='top--list-item'>Previous Orders</li>
                 <li className='top--list-item'>Favorite Products</li>
-              </ul><main className='main--menu'>
+              </ul>
+              <main className='main--menu'>
                 <div className='main--container'>
                   <div className='filter--container'>
                     {FILTERS.map((el, index)=> {

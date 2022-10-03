@@ -39,21 +39,47 @@
   box-sizing: border-box;
 
   display: flex;
-  justify-content: space-between;
+
+  .column-height{
+    height: 500px;
+    margin-left: 176px;
+  }
 
   .customize--column{
     display: flex;
     flex-direction: column;
     max-width: 420px;
     width: 100%;
+    cursor: pointer;
+
+    .customize--items{
+      max-width: 436px;
+      width: 100%;
+      max-height: 70px;
+      height: 100%;
+      border: 1px solid rgba(0,0,0,.38);
+      border-radius: 10px;
+      margin: 12px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      span{
+        display: block;
+        padding: 0 16px;
+        font-size: 19px;
+        font-weight: 500;
+      }
+    }
 
     h4{
       font-size: 26px;
       font-weight: 600;
       box-sizing: border-box;
       padding-bottom: 12px;
+      margin-bottom: 30px;
 
-      border-bottom: 2px solid colors.$light_green;
+      border-bottom: 4px solid colors.$light_green;
     }
 
     .options--list{

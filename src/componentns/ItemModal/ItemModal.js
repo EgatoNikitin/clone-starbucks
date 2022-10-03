@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 
 import './ItemModal.scss';
 import {useState} from 'react';
+import {FiltersModal} from '../FiltersModal/FiltersModal';
 
 export const ItemModal = ({
   iconPath,
@@ -29,13 +30,14 @@ export const ItemModal = ({
   ];
 
   const [activeSize, setActiveSize] = useState(0);
+  const [isModalOpen, setModalIsOpen] = useState(false);
 
   const handleActiveSize = (index) =>{
     setActiveSize(index);
   };
 
   return (
-    <div>
+    <div id='item-modal'>
       <div className='top--list active--catagori'>
         <h2 onClick={()=>itemClick()}>
           {`Menu/ ${activeFilter}/ ${selectedItem}`}
@@ -48,7 +50,7 @@ export const ItemModal = ({
         </div>
       </div>
       <div className='item--customize'>
-        <div className='customize--column'>
+        <div className='customize--column size--option'>
           <h4> Size options</h4>
           <div className='options--list'>
             {
@@ -70,8 +72,29 @@ export const ItemModal = ({
             }
           </div>
         </div>
-        <div className='customize--column'>
+        <div className='customize--column column-height'>
           <h4> Customization</h4>
+          <FiltersModal isOpen={isModalOpen}
+            setIsOpen={setModalIsOpen}/>
+          <div
+            className='customize--items'
+            onClick={()=>setModalIsOpen(true)}>
+            <span>Flavors</span><span>Edit</span>
+          </div>
+          <div
+            className='customize--items'
+            onClick={()=>setModalIsOpen(true)}>
+            <span>
+            Toppings
+            </span>
+            <span>Edit</span>
+          </div>
+          <div
+            className='customize--items'
+            onClick={()=>setModalIsOpen(true)}>
+            <span>Tea</span>
+            <span>Edit</span>
+          </div>
         </div>
       </div>
     </div>

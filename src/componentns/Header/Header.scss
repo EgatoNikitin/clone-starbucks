@@ -12,6 +12,7 @@ a {
   position: sticky;
   padding: 0 2.7%;
   top: 0;
+  z-index: 10;
   background: white;
 
   .header--wrapper {
@@ -71,6 +72,12 @@ a {
         display: inherit;
         align-items: center;
         box-sizing: border-box;
+      }
+
+      a{
+        height: 80px;
+        box-sizing: border-box;
+        border-bottom: 5px solid white;
       }
 
       .active--tab{
