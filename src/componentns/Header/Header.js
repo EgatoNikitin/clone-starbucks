@@ -39,7 +39,7 @@ export const Header = ({setActiveFilter = noop}) => {
               >
                 <li className='navigation--list--item'>rewards</li>
               </NavLink>
-              <NavLink to='/menu'
+              <NavLink to='/giftcard'
                 className={({isActive}) =>
                   (isActive ? 'navLink' : 'navLink')}
               >
