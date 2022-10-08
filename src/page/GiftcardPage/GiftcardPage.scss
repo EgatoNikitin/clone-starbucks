@@ -1,4 +1,23 @@
-img{
-    display: block;
-    width:150px;
-}
+.slick-prev {
+    left: 3% !important;
+    z-index: 1;
+
+  }
+  .slick-next {
+    right: 3% !important;
+    z-index: 1;
+  }
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 56px !important;
+  }
+
+  .slick-prev, .slick-next{
+    height: 46px !important;
+  }
+
+  .slick-slide{
+    height: 80% !important;
+    width: 12% !important;
+    padding-right: 16px;
+  }
