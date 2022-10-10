@@ -239,6 +239,7 @@ import icedMochas2
   from '../imgs/menu/Drinks/Cold Coffees/Iced Mochas/IMG-5944.jpg';
 import icedMochas3
   from '../imgs/menu/Drinks/Cold Coffees/Iced Mochas/IMG-5945.jpg';
+import giftcardfeat from '../imgs/giftcard-img/gift.png';
 
 
 
@@ -414,7 +415,23 @@ export const ICED_MOCHAS = {
   icedMochas3,
 };
 
-
-
+export const GIFTCARD_FEATURED = [
+  giftcardfeat,
+  giftcardfeat,
+  giftcardfeat,
+  giftcardfeat,
+  giftcardfeat,
+  giftcardfeat,
+  giftcardfeat,
+  giftcardfeat,
+  giftcardfeat,
+  giftcardfeat,
+  giftcardfeat,
+  giftcardfeat,
+  giftcardfeat,
+  giftcardfeat,
+  giftcardfeat,
+  giftcardfeat,
+];
 
 

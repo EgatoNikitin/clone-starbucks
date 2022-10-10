@@ -35,6 +35,7 @@ import {
   ICED_MOCHAS,
 } from './images';
 
+
 export const FOOTER_TITLES = {
   ABOUT_US: 'About us',
   CAREERS: 'Careers',
