@@ -239,7 +239,54 @@ import icedMochas2
   from '../imgs/menu/Drinks/Cold Coffees/Iced Mochas/IMG-5944.jpg';
 import icedMochas3
   from '../imgs/menu/Drinks/Cold Coffees/Iced Mochas/IMG-5945.jpg';
-import giftcardfeat from '../imgs/giftcard-img/gift.png';
+import featured from '../imgs/giftcard-img/featured.jpg';
+import featured2 from '../imgs/giftcard-img/featured2.jpg';
+import featured3 from '../imgs/giftcard-img/featured3.jpg';
+import featured4 from '../imgs/giftcard-img/featured4.jpg';
+import featured5 from '../imgs/giftcard-img/featured5.jpg';
+import featured6 from '../imgs/giftcard-img/featured6.jpg';
+import featured7 from '../imgs/giftcard-img/featured7.jpg';
+import featured8 from '../imgs/giftcard-img/featured8.jpg';
+import featured9 from '../imgs/giftcard-img/featured9.jpg';
+import featured10 from '../imgs/giftcard-img/featured10.jpg';
+import featured11 from '../imgs/giftcard-img/featured11.jpg';
+import featured12 from '../imgs/giftcard-img/featured12.jpg';
+import featured13 from '../imgs/giftcard-img/featured13.jpg';
+import featured14 from '../imgs/giftcard-img/featured14.jpg';
+import featured15 from '../imgs/giftcard-img/featured15.jpg';
+import featured16 from '../imgs/giftcard-img/featured16.jpg';
+import birthday from '../imgs/giftcard-img/birthday/birthday.jpg';
+import birthday2 from '../imgs/giftcard-img/birthday/birthday2.jpg';
+import birthday3 from '../imgs/giftcard-img/birthday/birthday3.jpg';
+import birthday4 from '../imgs/giftcard-img/birthday/birthday4.jpg';
+import birthday5 from '../imgs/giftcard-img/birthday/birthday5.jpg';
+import birthday6 from '../imgs/giftcard-img/birthday/birthday6.jpg';
+import thank from '../imgs/giftcard-img/thanks/thank.jpg';
+import thank2 from '../imgs/giftcard-img/thanks/thank2.jpg';
+import thank3 from '../imgs/giftcard-img/thanks/thank3.jpg';
+import thank4 from '../imgs/giftcard-img/thanks/thank4.jpg';
+import thank5 from '../imgs/giftcard-img/thanks/thank5.jpg';
+import celebration from '../imgs/giftcard-img/celebration/celebration.jpg';
+import celebration2 from '../imgs/giftcard-img/celebration/celebration2.jpg';
+import celebration3 from '../imgs/giftcard-img/celebration/celebration3.jpg';
+import psl from '../imgs/giftcard-img/PSL/psl.jpg';
+import psl2 from '../imgs/giftcard-img/PSL/psl2.jpg';
+import psl3 from '../imgs/giftcard-img/PSL/psl3.jpg';
+import psl4 from '../imgs/giftcard-img/PSL/psl4.jpg';
+import appreciation from '../imgs/giftcard-img/appreciation/appreciation.jpg';
+import appreciation2 from '../imgs/giftcard-img/appreciation/appreciation2.jpg';
+import appreciation3 from '../imgs/giftcard-img/appreciation/appreciation3.jpg';
+import appreciation4 from '../imgs/giftcard-img/appreciation/appreciation4.jpg';
+import workplace from '../imgs/giftcard-img/workplace/workplace.jpg';
+import workplace2 from '../imgs/giftcard-img/workplace/workplace2.jpg';
+import workplace3 from '../imgs/giftcard-img/workplace/workplace3.jpg';
+import workplace4 from '../imgs/giftcard-img/workplace/workplace4.jpg';
+import workplace5 from '../imgs/giftcard-img/workplace/workplace5.jpg';
+import enc from '../imgs/giftcard-img/encouragement/encouragement.jpg';
+import enc2 from '../imgs/giftcard-img/encouragement/encouragement2.jpg';
+import enc3 from '../imgs/giftcard-img/encouragement/encouragement3.jpg';
+import enc4 from '../imgs/giftcard-img/encouragement/encouragement4.jpg';
+import enc5 from '../imgs/giftcard-img/encouragement/encouragement5.jpg';
 
 
 
@@ -416,22 +463,73 @@ export const ICED_MOCHAS = {
 };
 
 export const GIFTCARD_FEATURED = [
-  giftcardfeat,
-  giftcardfeat,
-  giftcardfeat,
-  giftcardfeat,
-  giftcardfeat,
-  giftcardfeat,
-  giftcardfeat,
-  giftcardfeat,
-  giftcardfeat,
-  giftcardfeat,
-  giftcardfeat,
-  giftcardfeat,
-  giftcardfeat,
-  giftcardfeat,
-  giftcardfeat,
-  giftcardfeat,
+  featured,
+  featured2,
+  featured3,
+  featured4,
+  featured5,
+  featured6,
+  featured7,
+  featured8,
+  featured9,
+  featured10,
+  featured11,
+  featured12,
+  featured13,
+  featured14,
+  featured15,
+  featured16,
 ];
 
+export const GIFTCARD_BIRTHDAY = [
+  birthday,
+  birthday2,
+  birthday3,
+  birthday4,
+  birthday5,
+  birthday6,
+];
 
+export const GIFTCARD_THANK_YOU = [
+  thank,
+  thank2,
+  thank3,
+  thank4,
+  thank5,
+];
+
+export const GIFTCARD_CELEBRATION = [
+  celebration,
+  celebration2,
+  celebration3,
+];
+
+export const GIFTCARD_PSL = [
+  psl,
+  psl2,
+  psl3,
+  psl4,
+];
+
+export const GIFTCARD_APPRECIATION = [
+  appreciation,
+  appreciation2,
+  appreciation3,
+  appreciation4,
+];
+
+export const GIFTCARD_WORKPLACE = [
+  workplace,
+  workplace2,
+  workplace3,
+  workplace4,
+  workplace5,
+];
+
+export const GIFTCARD_ENCOURAGEMENT = [
+  enc,
+  enc2,
+  enc3,
+  enc4,
+  enc5,
+];

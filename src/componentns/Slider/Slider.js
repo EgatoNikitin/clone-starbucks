@@ -36,6 +36,3 @@ Carusel.propTypes ={
   title: PropTypes.string,
   images: PropTypes.arrayOf(string),
 };
-const qwe = (num){
-return()
-}

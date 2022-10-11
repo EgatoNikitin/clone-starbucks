@@ -4,6 +4,13 @@ import {Footer} from '../../componentns/Footer/Footer';
 import {Carusel} from '../../componentns/Slider/Slider';
 import img from '../../imgs/bulk-img.jpg';
 import {GIFTCARD_FEATURED} from '../../constants/images';
+import {GIFTCARD_BIRTHDAY} from '../../constants/images';
+import {GIFTCARD_THANK_YOU} from '../../constants/images';
+import {GIFTCARD_CELEBRATION} from '../../constants/images';
+import {GIFTCARD_PSL} from '../../constants/images';
+import {GIFTCARD_APPRECIATION} from '../../constants/images';
+import {GIFTCARD_WORKPLACE} from '../../constants/images';
+import {GIFTCARD_ENCOURAGEMENT} from '../../constants/images';
 
 const GiftcardPage = () => {
   return (
@@ -23,29 +30,29 @@ const GiftcardPage = () => {
       </div>
       <Carusel
         title='BIRTHDAY'
-        images={GIFTCARD_FEATURED} />
+        images={GIFTCARD_BIRTHDAY} />
       <Carusel
         title='THANK YOU'
-        images={GIFTCARD_FEATURED} />
+        images={GIFTCARD_THANK_YOU} />
       <Carusel
         title='CELEBRATION'
-        images={GIFTCARD_FEATURED} />
+        images={GIFTCARD_CELEBRATION} />
       <Carusel
         title='PSL'
-        images={GIFTCARD_FEATURED} />
+        images={GIFTCARD_PSL} />
       <Carusel
         title='APPRECIATION'
-        images={GIFTCARD_FEATURED} />
+        images={GIFTCARD_APPRECIATION} />
       <Carusel
         title='WORKPLACE'
-        images={GIFTCARD_FEATURED} />
+        images={GIFTCARD_WORKPLACE} />
       <Carusel
         title='ENCOURAGEMENT'
-        images={GIFTCARD_FEATURED} />
-      <Carusel
+        images={GIFTCARD_ENCOURAGEMENT} />
+      {/* <Carusel
         title='HALLOWEEN'
-        images={GIFTCARD_FEATURED} />
-      <Carusel
+        images={GIFTCARD_FEATURED} /> */}
+      {/* <Carusel
         title='FALL'
         images={GIFTCARD_FEATURED} />
       <Carusel
@@ -62,7 +69,7 @@ const GiftcardPage = () => {
         images={GIFTCARD_FEATURED} />
       <Carusel
         title='ANYTIME'
-        images={GIFTCARD_FEATURED} />
+        images={GIFTCARD_FEATURED} /> */}
       <div className='bulk--baner'>
         <img src={img}/>
         <div className='bulk--baner-wrapper'>
