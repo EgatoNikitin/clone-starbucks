@@ -239,6 +239,12 @@ import icedMochas2
   from '../imgs/menu/Drinks/Cold Coffees/Iced Mochas/IMG-5944.jpg';
 import icedMochas3
   from '../imgs/menu/Drinks/Cold Coffees/Iced Mochas/IMG-5945.jpg';
+import icedTeas1 from '../imgs/menu/Drinks/Iced Teas/Bottled Teas/IMG-5968.jpg';
+import icedTeas2 from '../imgs/menu/Drinks/Iced Teas/Bottled Teas/IMG-5969.jpg';
+import icedBlackTeas1 from '../imgs/menu/Drinks/Iced Teas/Iced Black Teas/IMG-5970.jpg';
+import icedBlackTeas2 from '../imgs/menu/Drinks/Iced Teas/Iced Black Teas/IMG-5971.jpg';
+import icedBlackTeas3 from '../imgs/menu/Drinks/Iced Teas/Iced Black Teas/IMG-5972.jpg';
+import icedBlackTeas4 from '../imgs/menu/Drinks/Iced Teas/Iced Black Teas/IMG-5974.jpg';
 import featured from '../imgs/giftcard-img/featured.jpg';
 import featured2 from '../imgs/giftcard-img/featured2.jpg';
 import featured3 from '../imgs/giftcard-img/featured3.jpg';
@@ -460,6 +466,16 @@ export const ICED_MOCHAS = {
   icedMochas1,
   icedMochas2,
   icedMochas3,
+};
+export const ICED_TEAS = {
+  icedTeas1,
+  icedTeas2,
+};
+export const ICED_BLACKTEAS = {
+  icedBlackTeas1,
+  icedBlackTeas2,
+  icedBlackTeas3,
+  icedBlackTeas4,
 };
 
 export const GIFTCARD_FEATURED = [
