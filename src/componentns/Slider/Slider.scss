@@ -24,22 +24,31 @@
 .slick-slider {
     margin-bottom: 40px;
     height: 270px;
+    .slick-list {
+        margin-bottom: 40px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: left;
+    }
 }
 .slick-track {
     margin-top: 10px;
     height: 250px;
+    .slick-slide{
+        display: flex;
+        align-items: center;
+        }
 }
-.slick-list {
-    margin-bottom: 40px;
-    border-radius: 10px;
-}
+
+
 .slider--item {
-    width: 392px !important;
-    height: 250px !important;
-    display: flex !important;
-    justify-content: center;
+    
     img {
         border-radius: 12px !important;
+        box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 4px 4px rgb(0 0 0 / 18%), 0 0 2px rgb(0 0 0 / 7%);
+        width: 19.5vw !important;
+        height: 12.5vw !important;
+
     }
     &:hover {
         transform: translate(0, -10px);
