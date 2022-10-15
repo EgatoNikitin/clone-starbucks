@@ -46,11 +46,20 @@
         width: 19vw !important;
         height: 12vw !important;
     }
+
     &:hover {
         transform: translate(0, -10px);
         transition: all 0.3s;
     }
 }
+
+.slick-slide.slick-active[data-index="4"],[data-index="8"],[data-index="12"],[data-index="15"]{
+    opacity: 0.2;
+}
+
+.slick-slide:not(.slick-active) {
+    opacity: 0.5;
+ }
 
 .FEATUREDtitle {
     display: flex;
