@@ -1,3 +1,11 @@
+h2{
+  color: rgba(0,0,0,.87);
+}
+
+p{
+  color: rgba(0,0,0,.58);
+}
+
 .GiftCard--banner {
   width: 100%;
   height: 110px;
@@ -8,6 +16,7 @@
   align-items: center;
   a {
     color: #006241 !important;
+    font-size: 18px;
     font-weight: 600;
     cursor: pointer;
   }
@@ -16,13 +25,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    p {
-      font-size: 18px;
+    h2 {
       font-weight: 600;
-      color: rgba(0, 0, 0, 0.58) !important;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 500;
     }
   }
 }
+
+
+
 .baner-button {
   cursor: pointer;
   text-align: center;
@@ -44,18 +58,27 @@
     transition: all 0.2s;
   }
 }
+
 .support--baner {
   padding: 40px 40px 40px 131px;
   width: 100%;
   height: 224px;
   background-color: #edebe9 !important;
+  h2{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: .1em;
+  }
   p {
-    width: 400px;
-    font-weight: 600;
-    color: #525252;
+    width: 444px;
+    font-weight: 500;
+    color: rgba(0,0,0,.87);
+    font-size: 18px;
+    letter-spacing: +.02em;
+    padding: 16px 0 8px 0;
   }
   .support--baner-buttons {
-    margin-top: 20px;
+    margin-top: 16px;
     button {
       &:hover {
         background-color: #d3d3d3;
@@ -77,6 +100,7 @@
     }
   }
 }
+
 .bulk--baner {
   width: 100%;
   height: 361px;
@@ -90,8 +114,13 @@
     margin-right: 40px;
   }
   .bulk--baner-wrapper {
+    letter-spacing: +.03em;
+    line-height: 1.5;
+    font-weight: 500;
     h2 {
       margin-top: 10px;
+      font-size: 25px;
+      font-weight: 500;
     }
     p {
       margin: 10px 0 10px 0;
@@ -106,15 +135,5 @@
         transition: all 0.2s;
       }
     }
-  }
-}
-.FEATUREDtitle {
-  display: flex;
-  justify-content: space-between;
-  margin: 30px 0px 20px 0px;
-  a {
-    margin-right: 35px;
-    color: #00754a;
-    font-weight: 600;
   }
 }

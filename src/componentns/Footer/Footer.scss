@@ -2,30 +2,34 @@
 
 .footer {
   border-top: 2px solid rgba(145, 139, 130, 0.35);
-  padding: 0 7%;
+  margin-top: 48px;
+  padding: 48px 7% 32px 7%;
 
   .footer--social-media {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     border-top: 2px solid rgba(145, 139, 130, 0.35);
-    padding: 32px 0 0;
+    padding: 32px 0 0 0;
+    margin-top: 32px;
 
 
     .social-media--copy-rights {
       color: rgba(0, 0, 0, 0.58);
-      margin: 24px 0 70px;
+      margin: 24px 0 16px;
+      font-weight: 500;
     }
 
     .social-media--list {
       display: flex;
       img {
-        width: 32px;
-        height: 32px;
+        width: 34px;
+        height: 34px;
       }
     }
 
     .social-media--rules {
+      color: rgba(0,0,0,.87);
       display: flex;
       font-weight: 500;
       font-size: 18px;
@@ -43,21 +47,23 @@
           text-decoration: underline;
           cursor: pointer;
         }
+        
       }
       span {
         width: 1px;
-        background: black;
-        margin: 0 16px 0 16px;
+        height: 22px;
+        background: rgba(0,0,0,.58);
+        margin: 0 24px 0 24px;
       }
+      
     }
   }
-
+  
   .footer-list--wrapper {
     display: flex;
     box-sizing: border-box;
     justify-content: flex-start;
     .list-column {
-      margin-top: 24px;
       margin-left: 40px;
       display: flex;
       flex-direction: column;
