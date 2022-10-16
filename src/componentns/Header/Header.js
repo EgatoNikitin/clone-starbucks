@@ -33,9 +33,9 @@ export const Header = ({setActiveFilter = noop}) => {
                 }
                 className='navigation--list--item'>menu</li>
               </NavLink>
-              <NavLink to='/menu'
+              <NavLink to='/revards'
                 className={({isActive}) =>
-                  (isActive ? 'navLink' : 'navLink')}
+                  (isActive ? 'active--tab navLink' : 'navLink')}
               >
                 <li className='navigation--list--item'>rewards</li>
               </NavLink>

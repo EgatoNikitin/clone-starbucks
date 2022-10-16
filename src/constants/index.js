@@ -1557,3 +1557,31 @@ export const CATEGORIES = {
     },
   ],
 };
+export const REW = [
+  {
+    title: 'Customize your drink',
+    image: icon,
+    text: 'qwe',
+  },
+  {
+    title: 'Customize your drink',
+    image: icon,
+    text: 'qwe',
+  },
+  {
+    title: 'Customize your drink',
+    image: icon,
+    text: 'qwe',
+  },
+  {
+    title: 'Customize your drink',
+    image: icon,
+    text: 'qwe',
+  },
+  {
+    title: 'Customize your drink',
+    image: icon,
+    text: 'qwe',
+  },
+
+];

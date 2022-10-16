@@ -1,14 +1,16 @@
 import {Header} from '../../componentns/Header/Header';
+import {Rewards} from '../../componentns/Rewards/Rewards';
 
-import './RerardsPage.scss';
+import './RewardsPage.scss';
 import {Footer} from '../../componentns/Footer/Footer';
 
-const RerardsPage = ()=>{
+const RewardsPage = ()=>{
   return (
     <div className='main--wrapper'>
       <Header/>
+      <Rewards/>
       <Footer/>
     </div>
   );
 };
-export default RerardsPage;
+export default RewardsPage;
