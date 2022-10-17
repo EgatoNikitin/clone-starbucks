@@ -15,7 +15,7 @@
             font-weight: 600;
         }
         ul {
-            padding-top: 60px;
+            padding-top: 63px;
             text-align: center;
             height: 60px;
             li {
@@ -23,12 +23,18 @@
                 font-weight: 500;
                 display: inline;
                 padding: 0 20px 0 20px;
+                color: #000;
+                padding-bottom: 5px;
+                span {
+                    color: #cba258;
+                    font-size: 16px;
+                }
             }
         }
     }
 }
 .change--block {
-    height: 270px;
+    height: 285px;
     background-color: #d4e9e2;
     display: flex;
     justify-content: center;
@@ -50,7 +56,15 @@
         color: #000;
     }
 }
-
+.change--block-text {
+    padding-left: 50px;
+}
+.change--block-wrapper {
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .active--price {
     color: colors.$dark_green;
     border-bottom: 5px solid colors.$dark_green;

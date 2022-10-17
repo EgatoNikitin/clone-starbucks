@@ -26,15 +26,15 @@ export const Rewards = ()=>{
               event.target.closest('li').textContent)}
         >
           <li className={`stars--list-item ${getIsActive('25')}`}>25
-            <span>*</span></li>
+            <span>★</span></li>
           <li className={`stars--list-item ${getIsActive('50')}`}>50
-            <span>*</span></li>
+            <span>★</span></li>
           <li className={`stars--list-item ${getIsActive('150')}`}>150
-            <span>*</span></li>
+            <span>★</span></li>
           <li className={`stars--list-item ${getIsActive('200')}`}>200
-            <span>*</span></li>
+            <span>★</span></li>
           <li className={`stars--list-item ${getIsActive('400')}`}>400
-            <span>*</span></li>
+            <span>★</span></li>
         </ul>
       </div>
       <RewardsCard price={price}/>
