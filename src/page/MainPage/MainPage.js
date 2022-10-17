@@ -1,14 +1,19 @@
+import {Suspense} from 'react';
 import {Header} from '../../componentns/Header/Header';
 
 import './MainPage.scss';
 import {Footer} from '../../componentns/Footer/Footer';
 import {MainContent} from '../../componentns/MainContent/MainContent';
 
+// Проставьте себе тут компоненту с чашкой и в других страницах.
+// Компонету нужно передать пропсом в fallback
 const MainPage = ()=>{
   return (
     <div className='main--wrapper'>
       <Header/>
-      <MainContent/>
+      <Suspense fallback='...loading'>
+        <MainContent/>
+      </Suspense>
       <Footer/>
     </div>
   );
