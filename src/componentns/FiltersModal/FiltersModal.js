@@ -2,6 +2,8 @@ import Modal from 'react-modal';
 import PropTypes from 'prop-types';
 import {getContent} from './utils';
 import {useState} from 'react';
+import closeIcon from '../../imgs/close.svg';
+import './FiltersModal.scss';
 
 const customStyles = {
   content: {
@@ -50,6 +52,11 @@ export const FiltersModal = ({isOpen, setIsOpen}) => {
       isOpen={isOpen}
       style={customStyles}
     >
+      <button type='button'
+        className='modal--button-close'
+        onClick={()=>setIsOpen(false)}>
+        <img src={closeIcon} alt='close icon'/>
+      </button>
       {getContent('Flavors',
           flavors,
           handleIncreaseFlavors,
