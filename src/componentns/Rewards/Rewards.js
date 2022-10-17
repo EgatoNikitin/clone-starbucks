@@ -1,12 +1,7 @@
+import icon from '../../imgs/rewards/rew.png';
 import './Rewards.scss';
-import {REW} from '../../constants/index';
 
-export const Rewards = ({
-  title,
-  image,
-  text,
-  array,
-})=>{
+export const Rewards = ()=>{
   return (
     <div className='rewards--wrapper'>
       <div className="stars--wrapper">
@@ -25,19 +20,13 @@ export const Rewards = ({
         </ul>
       </div>
       <div className="change--block">
-        {
-          array.map((el, index)=> {
-            return (
-              <img src={el.image} alt="#"/>
-        <div className="change--block-text"
-          onClick={()=>itemClickHandler(el.icon, el.title)}
-          key={index+el}>
-          <h3>{el.title}</h3>
-          <p>{el.text}</p>
+        <img src={icon}/>
+        <div className="change--block-text">
+          <h3>Customize your drink</h3>
+          <p>Make your drink just right with an extra
+              espresso shot, dairy substitute or a dash
+               of your favorite syrup.</p>
         </div>
-            );
-          })
-        }
       </div>
     </div>
   );
