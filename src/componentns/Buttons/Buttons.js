@@ -15,6 +15,10 @@ export const Buttons = ({type, text, size}) =>{
         className={`button light ${size}`}>
         {text}
       </button>);
+      case 'full-green': return (<button type='button'
+        className='button full-green'>
+        {text}
+      </button>);
     }
   };
 

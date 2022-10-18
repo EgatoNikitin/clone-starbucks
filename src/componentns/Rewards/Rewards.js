@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import './Rewards.scss';
 import {RewardsCard} from '../RewardsCard/RewardsCard';
+import {Buttons} from '../Buttons/Buttons';
 
 export const Rewards = ()=>{
   const [price, setPrice]=useState('25');
@@ -19,6 +20,17 @@ export const Rewards = ()=>{
 
   return (
     <div className='rewards--wrapper'>
+      <div className='rewards--header'>
+        <h1>Starbucks® Rewards</h1>
+      </div>
+
+      <section className='rewards--join'>
+        <h2>FREE COFFEE <br/> IS A TAP AWAY</h2>
+        <p>Join now to start earning Rewards.</p>
+        <Buttons type='full-green' text='Join now'/>
+        <p>Or <a>join in the app</a> for the best experience</p>
+      </section>
+
       <div className="stars--wrapper">
         <h2>Get your favorites for free</h2>
         <ul className="stars--list"
