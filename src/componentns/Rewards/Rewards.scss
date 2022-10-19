@@ -9,7 +9,7 @@
         width: 100%;
         height: 50px;
         box-sizing: border-box;
-        background-color: #1e3932!important;
+        background-color: #1e3932;
         color: white;
         font-size: 0.55rem;
         letter-spacing: 1px;
@@ -19,6 +19,7 @@
         align-items: center;
         box-shadow: 0 4px 4px 0 rgb(0 0 0 / 12%), 
         0 0 2px 0 rgb(0 0 0 / 24%);
+       
     }
 
     .rewards--join{
@@ -28,6 +29,31 @@
         background-repeat: no-repeat;
         background-size:cover;
         height: 35vW;
+        color: rgba(0,0,0,.87);
+
+        display: flex;
+        align-items: flex-start;
+        justify-content:center;
+        flex-direction: column;
+
+padding-left: 40px;
+
+        h2{
+            font-size: 36px;
+            font-weight: 600;
+        }
+        p{
+            color: rgba(0,0,0,.87);
+            font-size: 19px;
+            padding: 16px 0 32px;
+            font-weight: 500;
+        }
+
+        
+
+        a{
+            text-decoration: underline;
+        }
     }
 
     .stars--wrapper {
@@ -57,6 +83,66 @@
                     font-size: 16px;
                 }
             }
+        }
+    }
+
+    .rewards--easy-started{
+        margin: 128px 40px;
+        color: rgba(0,0,0,.87);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h2{
+            font-size: 30px;
+            font-weight: 600;
+        }
+        p{
+            padding-top: 16px;
+            font-size: 17px;
+            font-weight: 500;
+            color: rgba(0,0,0,.87);
+        }
+        .easy-started-steps{
+         padding-top: 48px;
+          display: flex;  
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+
+          .easy-started-item{
+           
+            span{
+                display: inline-block;
+                color: #00754a;
+                font-size: 25px;
+                font-weight: 700;
+                border: #00754a solid 2px;
+                border-radius: 50%;
+                width: 55px;
+                height: 55px;
+                padding-top: 9px;
+              }
+    
+              h3{
+                font-size: 20px;
+                padding-top: 24px;
+                font-weight: 600;
+              }
+
+              &:nth-child(2){
+                padding: 0 25px;
+              }
+
+              p{
+                font-size: 17px;
+              }
+          }
+
+          
+
+          
         }
     }
 }

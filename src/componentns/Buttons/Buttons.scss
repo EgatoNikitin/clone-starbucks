@@ -59,8 +59,10 @@
 }
 
 .full-green{
-  background-color: colors.$bright_green;
-  color: white;
+  background-color: #00754a;
+    border-color: #00754a;
+    color: #fff;
   width: 101px;
-  border: none;
+  height: 35px;
+  font-weight: 600;
 }
