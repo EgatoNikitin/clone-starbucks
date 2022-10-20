@@ -40,7 +40,8 @@ export const Rewards = ()=>{
           <div className='easy-started-item'>
             <span>1</span>
             <h3>Create an account</h3>
-            <p>To get started, join now. You can also join in the app 
+            <p>To get started, <a>join now</a>. You can also&nbsp;
+              <a>join in the app</a>&nbsp;
               to get access to the full range of Starbucks® 
               Rewards benefits.</p>
           </div>
@@ -48,7 +49,8 @@ export const Rewards = ()=>{
             <span>2</span>
             <h3>Order and pay how you’d like</h3>
             <p>Use cash, credit/debit card or save some time and pay right 
-              through the app. You’ll collect Stars all ways. Learn how</p>
+              through the app. You’ll collect Stars all ways.
+              &nbsp;<a>Learn how</a></p>
           </div>
           <div className='easy-started-item'>
             <span>3</span>
@@ -79,6 +81,88 @@ export const Rewards = ()=>{
         </ul>
       </div>
       <RewardsCard price={price}/>
+
+      <section className='rewards--endless-extras rewards--easy-started'>
+        <div className='easy-started-title'>
+          <h2>Endless Extras</h2>
+          <p>Joining Starbucks® Rewards means unlocking access
+             to exclusive benefits. Say hello to easy ordering,
+             tasty Rewards and—yes, free coffee.</p>
+        </div>
+        <div className='easy-started-steps'>
+          <div className='easy-started-item'>
+            <img src={require('../../imgs/rewards/freebies.png')}/>
+            <h3>Fun freebies</h3>
+            <p>Not only can you earn free coffee, look forward
+               to a birthday treat plus coffee and tea refills.</p>
+            <a>Learn more</a>
+          </div>
+          <div className='easy-started-item'>
+            <img src={require('../../imgs/rewards/order.png')}/>
+            <h3>Order & pay ahead</h3>
+            <p>Enjoy the convenience of in-store, curbside
+               or drive-thru pickup at select stores.</p>
+            <a>Learn more</a>
+          </div>
+          <div className='easy-started-item'>
+            <img src={require('../../imgs/rewards/free.png')}/>
+            <h3>Get to free faster</h3>
+            <p>Earn Stars even quicker with Bonus Star challenges,
+               Double Star Days and exciting games.</p>
+            <a>Learn more</a>
+          </div>
+        </div>
+      </section>
+
+      <section className='rewards--cash-card rewards--easy-started'>
+      
+        <div className='easy-started-title'>
+          <h2>Cash or card, you earn Stars</h2>
+          <p>No matter how you pay, you can earn Stars with
+             your morning coffee. Those Stars add up to
+            (really delicious) Rewards.</p>
+        </div>
+
+        <div className='cash-card-steps easy-started-steps'>
+          <div className='easy-started-item'>
+            <h3>1★Star per dollar</h3>
+            <p>Pay as you go</p>
+          </div>
+          <div className='easy-started-item'>
+            <img src={require('../../imgs/rewards/order.png')}/>
+            <h3>Scan and pay separately</h3>
+            <p>Use cash or credit/debit card at the register.</p>
+          </div>
+          <div className='easy-started-item'>
+            <img src={require('../../imgs/rewards/free.png')}/>
+            <h3>Save payment in the app</h3>
+            <p>Check-out faster by saving a credit/debit card
+               or PayPal to your account. You’ll be able to order ahead
+               or scan and pay at the register in one step.</p>
+          </div>
+
+          <div className='easy-started-item'>
+            <h3>2★Stars per dollar</h3>
+            <p>Add funds in the app</p>
+          </div>
+          <div className='easy-started-item'>
+            <img src={require('../../imgs/rewards/order.png')}/>
+            <h3>Preload</h3>
+            <p>To save time and earn Stars twice as fast, add money
+               to your digital Starbucks Card using any payment option.
+               Scan and pay in one step or order ahead in the app.</p>
+          </div>
+          <div className='easy-started-item'>
+            <img src={require('../../imgs/rewards/free.png')}/>
+            <h3>Register your gift card</h3>
+            <p>Then use it to pay through the app. You can even consolidate
+               balances from multiple cards in one place.</p>
+          </div>
+
+        </div>
+      </section>
+
+      
     </div>
   );
 };

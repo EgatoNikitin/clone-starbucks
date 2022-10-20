@@ -107,12 +107,14 @@ padding-left: 40px;
         .easy-started-steps{
          padding-top: 48px;
           display: flex;  
-          justify-content: center;
+          justify-content: space-evenly;
           align-items: center;
           text-align: center;
+          margin: 0 50px;
+          
 
           .easy-started-item{
-           
+            width: 28.3%;
             span{
                 display: inline-block;
                 color: #00754a;
@@ -126,17 +128,33 @@ padding-left: 40px;
               }
     
               h3{
-                font-size: 20px;
+                font-size: 21px;
                 padding-top: 24px;
                 font-weight: 600;
               }
 
-              &:nth-child(2){
-                padding: 0 25px;
-              }
-
               p{
-                font-size: 17px;
+                font-size: 18px;
+                letter-spacing: 0.2px;
+                padding-bottom: 16px;
+                    a{
+                     font-size: inherit; 
+                     font-weight: inherit;  
+                    }
+
+              }
+              
+              a{
+                color:#00754a;
+                text-decoration: underline;
+                cursor: pointer;
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+              img{
+                width: 112px;
+                height: 112px;
               }
           }
 
@@ -145,6 +163,12 @@ padding-left: 40px;
           
         }
     }
+}
+
+.rewards--cash-card{
+    background-color: #f2f0eb;
+    margin: 0!important;
+    padding: 48px 40px;
 }
 .change--block {
     height: 285px;
