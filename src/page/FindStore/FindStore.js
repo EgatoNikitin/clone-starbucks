@@ -11,7 +11,7 @@ export const FindStore = ()=>{
   const mapContainer = useRef(null);
   const map = useRef(null);
   const [lng, setLng] = useState(41.63);
-  const [lat, setLat] = useState(41.6);
+  const [lat, setLat] = useState(-41.6);
   const [zoom, setZoom] = useState(10);
 
   useEffect(() => {
@@ -25,9 +25,16 @@ export const FindStore = ()=>{
   });
 
   useEffect(()=>{
+    if (!map.current) return; // wait for map to initialize
+    map.current.jumpTo({
+      center: [lat, lng],
+    });
+  }, [lat, lng]);
+
+  useEffect(()=>{
     const successCallback = (position) => {
-      setLat(position.coords.latitude);
-      setLng(position.coords.longitude);
+      setLng(position.coords.longitude.toFixed(4));
+      setLat(position.coords.latitude.toFixed(4));
     };
 
     const errorCallback = (error) => {
@@ -36,6 +43,7 @@ export const FindStore = ()=>{
 
     navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
   }, []);
+
   return (
     <>
       <Header/>
