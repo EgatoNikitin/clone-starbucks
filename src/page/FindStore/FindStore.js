@@ -27,7 +27,7 @@ export const FindStore = ()=>{
   useEffect(()=>{
     if (!map.current) return; // wait for map to initialize
     map.current.jumpTo({
-      center: [lat, lng],
+      center: [lng, lat],
     });
   }, [lat, lng]);
 
