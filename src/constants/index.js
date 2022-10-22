@@ -1559,29 +1559,37 @@ export const CATEGORIES = {
 };
 export const REW = [
   {
-    title: 'Customize your drink',
-    image: icon,
-    text: 'qwe',
+    title: '111111',
+    subtitle: 'Joining Starbucks® Rewards means unlocking', 
+  },
+];
+export const REWITEM = [
+  {
+    icon: icon,
+    title: 'Create an account',
+    text: 'Joining Starbucks® Rewards means unlocking', 
   },
   {
-    title: 'Customize your drink',
-    image: icon,
-    text: 'qwe',
+    icon: icon,
+    title: 'Create an account',
+    text: 'Joining Starbucks® Rewards means unlocking', 
   },
   {
-    title: 'Customize your drink',
-    image: icon,
-    text: 'qwe',
+    icon: icon,
+    title: 'Create an account',
+    text: 'Joining Starbucks® Rewards means unlocking', 
   },
-  {
-    title: 'Customize your drink',
-    image: icon,
-    text: 'qwe',
-  },
-  {
-    title: 'Customize your drink',
-    image: icon,
-    text: 'qwe',
-  },
+];
 
+export const REW2 = [
+  {
+    title: '222222',
+    subtitle: 'Joining Starbucks® Rewards means unlocking', 
+  },
+];
+export const REW3 = [
+  {
+    title: '333333',
+    subtitle: 'Joining Starbucks® Rewards means unlocking', 
+  },
 ];

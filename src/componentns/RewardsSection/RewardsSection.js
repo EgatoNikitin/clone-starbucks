@@ -1,17 +1,29 @@
 import PropTypes from 'prop-types';
+import '../Rewards/Rewards.scss';
 
-export const RewardsSection = ({title, subtitle, children})=>{
+export const RewardsSection = ({array, children})=>{
   return (
     <>
-      <h3>{title}</h3>
-      <h5>{subtitle}</h5>
-      {children}
+      {array.map((el, _index)=>{
+        return (
+          <section className='rewards-section'>
+            <div className='rewards-title'>
+              <h2>{el.title}</h2>
+              <p>{el.subtitle}</p>
+            </div>
+            <div className='rewards-steps'>
+              <div className='rewards-item'>
+                {children}
+              </div>
+            </div>
+          </section>
+        );
+      })}
     </>
   );
 };
 
 RewardsSection.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
+  array: PropTypes.array,
   children: PropTypes.node,
 };

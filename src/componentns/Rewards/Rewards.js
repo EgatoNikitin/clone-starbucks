@@ -2,7 +2,10 @@ import {useState} from 'react';
 import './Rewards.scss';
 import {RewardsCard} from '../RewardsCard/RewardsCard';
 import {Buttons} from '../Buttons/Buttons';
-// import {RewardsSection} from '../RewardsSection/RewardsSection';
+import {RewardsSection} from '../RewardsSection/RewardsSection';
+import {RewardsSectionItem} from '../RewardsSection/RewardsSectionItem';
+import {REW, REW2, REW3, REWITEM} from '../../constants';
+
 
 export const Rewards = ()=>{
   const [price, setPrice]=useState('25');
@@ -32,13 +35,19 @@ export const Rewards = ()=>{
         <p>Or <a>join in the app</a> for the best experience</p>
       </section>
 
-      <section className='rewards--easy-started'>
-        <div className='easy-started-title'>
+      <RewardsSection array={REW}/>
+      <RewardsSectionItem array={REWITEM}/>
+        
+      
+      
+
+      <section className='rewards-section'>
+        <div className='rewards-title'>
           <h2>Getting started is easy</h2>
           <p>Earn Stars and get rewarded in a few easy steps.</p>
         </div>
-        <div className='easy-started-steps'>
-          <div className='easy-started-item'>
+        <div className='rewards-steps'>
+          <div className='rewards-item'>
             <span>1</span>
             <h3>Create an account</h3>
             <p>To get started, <a>join now</a>. You can also&nbsp;
@@ -46,14 +55,14 @@ export const Rewards = ()=>{
               to get access to the full range of Starbucks®
               Rewards benefits.</p>
           </div>
-          <div className='easy-started-item'>
+          <div className='rewards-item'>
             <span>2</span>
             <h3>Order and pay how you’d like</h3>
             <p>Use cash, credit/debit card or save some time and pay right
               through the app. You’ll collect Stars all ways.
               &nbsp;<a>Learn how</a></p>
           </div>
-          <div className='easy-started-item'>
+          <div className='rewards-item'>
             <span>3</span>
             <h3>Earn Stars, get Rewards</h3>
             <p>As you earn Stars, you can redeem them for Rewards—like
@@ -83,29 +92,32 @@ export const Rewards = ()=>{
       </div>
       <RewardsCard price={price}/>
 
-      <section className='rewards--endless-extras rewards--easy-started'>
-        <div className='easy-started-title'>
+      <RewardsSection
+        array={REW2}
+      />
+      <section className='rewards-section2 rewards-section'>
+        <div className='rewards-title'>
           <h2>Endless Extras</h2>
           <p>Joining Starbucks® Rewards means unlocking access
              to exclusive benefits. Say hello to easy ordering,
              tasty Rewards and—yes, free coffee.</p>
         </div>
-        <div className='easy-started-steps'>
-          <div className='easy-started-item'>
+        <div className='rewards-steps'>
+          <div className='rewards-item'>
             <img src={require('../../imgs/rewards/freebies.png')}/>
             <h3>Fun freebies</h3>
             <p>Not only can you earn free coffee, look forward
                to a birthday treat plus coffee and tea refills.</p>
             <a>Learn more</a>
           </div>
-          <div className='easy-started-item'>
+          <div className='rewards-item'>
             <img src={require('../../imgs/rewards/order.png')}/>
             <h3>Order & pay ahead</h3>
             <p>Enjoy the convenience of in-store, curbside
                or drive-thru pickup at select stores.</p>
             <a>Learn more</a>
           </div>
-          <div className='easy-started-item'>
+          <div className='rewards-item'>
             <img src={require('../../imgs/rewards/free.png')}/>
             <h3>Get to free faster</h3>
             <p>Earn Stars even quicker with Bonus Star challenges,
@@ -114,27 +126,30 @@ export const Rewards = ()=>{
           </div>
         </div>
       </section>
+      <RewardsSection
+        className='rewards-section3'
+        array={REW3}
+      />
+      <section className='rewards-section3 rewards-section'>
 
-      <section className='rewards--cash-card rewards--easy-started'>
-
-        <div className='easy-started-title'>
+        <div className='rewards-title'>
           <h2>Cash or card, you earn Stars</h2>
           <p>No matter how you pay, you can earn Stars with
              your morning coffee. Those Stars add up to
             (really delicious) Rewards.</p>
         </div>
 
-        <div className='cash-card-steps easy-started-steps'>
-          <div className='easy-started-item'>
+        <div className='cash-card-steps rewards-steps'>
+          <div className='rewards-item'>
             <h3>1★Star per dollar</h3>
             <p>Pay as you go</p>
           </div>
-          <div className='easy-started-item'>
+          <div className='rewards-item'>
             <img src={require('../../imgs/rewards/order.png')}/>
             <h3>Scan and pay separately</h3>
             <p>Use cash or credit/debit card at the register.</p>
           </div>
-          <div className='easy-started-item'>
+          <div className='rewards-item'>
             <img src={require('../../imgs/rewards/free.png')}/>
             <h3>Save payment in the app</h3>
             <p>Check-out faster by saving a credit/debit card
@@ -142,18 +157,18 @@ export const Rewards = ()=>{
                or scan and pay at the register in one step.</p>
           </div>
 
-          <div className='easy-started-item'>
+          <div className='rewards-item'>
             <h3>2★Stars per dollar</h3>
             <p>Add funds in the app</p>
           </div>
-          <div className='easy-started-item'>
+          <div className='rewards-item'>
             <img src={require('../../imgs/rewards/order.png')}/>
             <h3>Preload</h3>
             <p>To save time and earn Stars twice as fast, add money
                to your digital Starbucks Card using any payment option.
                Scan and pay in one step or order ahead in the app.</p>
           </div>
-          <div className='easy-started-item'>
+          <div className='rewards-item'>
             <img src={require('../../imgs/rewards/free.png')}/>
             <h3>Register your gift card</h3>
             <p>Then use it to pay through the app. You can even consolidate

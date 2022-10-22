@@ -89,7 +89,7 @@ padding-left: 40px;
         }
     }
 
-    .rewards--easy-started{
+    .rewards-section{
         margin: 128px 40px;
         color: rgba(0,0,0,.87);
         display: flex;
@@ -107,7 +107,7 @@ padding-left: 40px;
             font-weight: 500;
             color: rgba(0,0,0,.87);
         }
-        .easy-started-steps{
+        .rewards-steps{
          padding-top: 48px;
           display: flex;
           justify-content: space-evenly;
@@ -116,7 +116,7 @@ padding-left: 40px;
           margin: 0 50px;
 
 
-          .easy-started-item{
+          .rewards-item{
             width: 28.3%;
             span{
                 display: inline-block;
@@ -168,7 +168,7 @@ padding-left: 40px;
     }
 }
 
-.rewards--cash-card{
+.rewards-section3{
     background-color: #f2f0eb;
     margin: 0!important;
     padding: 48px 40px;
