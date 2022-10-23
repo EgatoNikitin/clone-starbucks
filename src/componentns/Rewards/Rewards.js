@@ -4,7 +4,7 @@ import {RewardsCard} from '../RewardsCard/RewardsCard';
 import {Buttons} from '../Buttons/Buttons';
 import {RewardsSection} from '../RewardsSection/RewardsSection';
 import {RewardsSectionItem} from '../RewardsSection/RewardsSectionItem';
-import {REW, REW2, REW3, REWITEM} from '../../constants';
+import {REW} from '../../constants';
 
 
 export const Rewards = ()=>{
@@ -35,11 +35,11 @@ export const Rewards = ()=>{
         <p>Or <a>join in the app</a> for the best experience</p>
       </section>
 
-      <RewardsSection array={REW}/>
-      <RewardsSectionItem array={REWITEM}/>
-        
-      
-      
+      <RewardsSection
+        title={REW.section1.title}
+        subtitle={REW.section1.subtitle}>
+        <RewardsSectionItem array={REW.section1.arrayItem}/>
+      </RewardsSection>
 
       <section className='rewards-section'>
         <div className='rewards-title'>
@@ -93,8 +93,11 @@ export const Rewards = ()=>{
       <RewardsCard price={price}/>
 
       <RewardsSection
-        array={REW2}
-      />
+        title={REW.section2.title}
+        subtitle={REW.section2.subtitle}>
+        <RewardsSectionItem array={REW.section2.arrayItem}/>
+      </RewardsSection>
+
       <section className='rewards-section2 rewards-section'>
         <div className='rewards-title'>
           <h2>Endless Extras</h2>
@@ -127,9 +130,10 @@ export const Rewards = ()=>{
         </div>
       </section>
       <RewardsSection
-        className='rewards-section3'
-        array={REW3}
-      />
+        title={REW.section3.title}
+        subtitle={REW.section3.subtitle}>
+        <RewardsSectionItem array={REW.section3.arrayItem}/>
+      </RewardsSection>
       <section className='rewards-section3 rewards-section'>
 
         <div className='rewards-title'>
