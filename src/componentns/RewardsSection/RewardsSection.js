@@ -9,9 +9,7 @@ export const RewardsSection = ({title, subtitle, children})=>{
         <p>{subtitle}</p>
       </div>
       <div className='rewards-steps'>
-        <div className='rewards-item'>
-          {children}
-        </div>
+        {children}
       </div>
     </section>
   );

@@ -1,4 +1,48 @@
+.findstore-wrapper {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
 
-.map-container {
-  height: 400px;
+  .search-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+
+    width: 30%;
+
+    .input-wrapper {
+      border-bottom: 1px solid rgba(0, 0, 0, .58);
+      margin: 24px 0px;
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+
+      input {
+        all: unset;
+        height: 35px;
+      }
+
+      img {
+        display: block;
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    h2 {
+      margin-bottom: 16px;
+    }
+
+    h4 {
+      margin-bottom: 16px;
+    }
+  }
+
+  .map-container {
+
+    height: 89vh;
+    overflow-y: hidden;
+    width: 70%;
+
+  }
 }
