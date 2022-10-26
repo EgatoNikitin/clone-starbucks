@@ -181,14 +181,47 @@
 .rewards-section3 {
     background-color: #f2f0eb;
 
+    .rewards-section {
+        margin: 0 !important;
+    }
+
     .rewards-steps {
         display: flex;
+        flex-flow: row wrap;
+        margin: 0 !important;
 
     }
 
-    .rewards-item::nth-child(3) {
-        flex-grow: 5;
+    .rewards-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+
+        &:nth-child(1) {
+            flex-grow: 0;
+        }
+
+        &:nth-child(2) {
+            flex-grow: 10;
+        }
+
+        &:nth-child(3) {
+            flex-grow: 5;
+        }
+
+
+
+        &:nth-child(5) {
+            flex-grow: 5;
+        }
+
+        &:nth-child(6) {
+            flex-grow: 5;
+        }
     }
+
+
 
 }
 
