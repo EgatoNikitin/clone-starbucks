@@ -5,6 +5,13 @@ import apple from '../imgs/main-content/apple.jpg';
 import cakes from '../imgs/main-content/cakes.png';
 import coffee from '../imgs/main-content/coffe.png';
 import icon from '../imgs/menu/icon.jpg';
+import freebies from '../imgs/rewards/freebies.png';
+import order from '../imgs/rewards/order.png';
+import free from '../imgs/rewards/free.png';
+import scan from '../imgs/rewards/scan.png';
+import save from '../imgs/rewards/save.png';
+import register from '../imgs/rewards/register.png';
+import preload from '../imgs/rewards/preload.png';
 import {
   BREWED_COFFEE,
   AMERICANO,
@@ -1583,17 +1590,17 @@ export const REW = {
     title: 'Endless Extras',
     subtitle: 'Joining Starbucks® Rewards means unlocking access to exclusive benefits. Say hello to easy ordering, tasty Rewards and—yes, free coffee.',
     arrayItem: [
-      {icon: icon,
+      {icon: freebies,
         title: 'Fun freebies',
         text: 'Not only can you earn free coffee, look forward to a birthday treat plus coffee and tea refills.',
         link: 'Learn more',
       },
-      {icon: icon,
+      {icon: order,
         title: 'Order & pay ahead',
         text: 'Enjoy the convenience of in-store, curbside or drive-thru pickup at select stores.',
         link: 'Learn more',
       },
-      {icon: icon,
+      {icon: free,
         title: 'Get to free faster',
         text: 'Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting games.',
         link: 'Learn more',
@@ -1607,22 +1614,22 @@ export const REW = {
       {title: '1★Star per dollar',
         text: 'Pay as you go',
       },
-      {icon: icon,
+      {icon: scan,
         title: 'Scan and pay separately',
         text: 'Use cash or credit/debit card at the register.',
       },
-      {icon: icon,
+      {icon: save,
         title: 'Save payment in the app',
         text: 'Check-out faster by saving a credit/debit card or PayPal to your account. You’ll be able to order ahead or scan and pay at the register in one step.',
       },
       {title: '2★Stars per dollar',
         text: 'Add funds in the app',
       },
-      {icon: icon,
+      {icon: preload,
         title: 'Preload',
         text: 'To save time and earn Stars twice as fast, add money to your digital Starbucks Card using any payment option. Scan and pay in one step or order ahead in the app.',
       },
-      {icon: icon,
+      {icon: register,
         title: 'Register your gift card',
         text: 'Then use it to pay through the app. You can even consolidate balances from multiple cards in one place.',
       },

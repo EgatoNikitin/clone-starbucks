@@ -6,7 +6,7 @@
     width: 100%;
     position: relative;
 
-    .rewards--header{
+    .rewards--header {
         width: 100%;
         height: 50px;
         box-sizing: border-box;
@@ -19,34 +19,35 @@
         display: flex;
         align-items: center;
         box-shadow: 0 4px 4px 0 rgb(0 0 0 / 12%),
-        0 0 2px 0 rgb(0 0 0 / 24%);
+            0 0 2px 0 rgb(0 0 0 / 24%);
         position: sticky;
-        top:80px;
+        top: 80px;
 
     }
 
-    .rewards--join{
+    .rewards--join {
 
         background-color: rgb(212, 233, 226);
         background-image: url(../../imgs/rewards/star.jpg);
         background-repeat: no-repeat;
-        background-size:cover;
+        background-size: cover;
         height: 35vW;
-        color: rgba(0,0,0,.87);
+        color: rgba(0, 0, 0, .87);
 
         display: flex;
         align-items: flex-start;
-        justify-content:center;
+        justify-content: center;
         flex-direction: column;
 
-padding-left: 40px;
+        padding-left: 40px;
 
-        h2{
+        h2 {
             font-size: 36px;
             font-weight: 600;
         }
-        p{
-            color: rgba(0,0,0,.87);
+
+        p {
+            color: rgba(0, 0, 0, .87);
             font-size: 19px;
             padding: 16px 0 32px;
             font-weight: 500;
@@ -54,7 +55,7 @@ padding-left: 40px;
 
 
 
-        a{
+        a {
             text-decoration: underline;
         }
     }
@@ -63,16 +64,19 @@ padding-left: 40px;
         background-color: #f3faf7;
         width: 100%;
         height: 194px;
+
         h2 {
             text-align: center;
             padding-top: 40px;
             font-size: 32px;
             font-weight: 600;
         }
+
         ul {
             padding-top: 63px;
             text-align: center;
             height: 60px;
+
             li {
                 font-size: 28px;
                 font-weight: 500;
@@ -81,6 +85,7 @@ padding-left: 40px;
                 color: #000;
                 padding-bottom: 5px;
                 cursor: pointer;
+
                 span {
                     color: #cba258;
                     font-size: 16px;
@@ -89,77 +94,82 @@ padding-left: 40px;
         }
     }
 
-    .rewards-section{
+    .rewards-section {
         margin: 128px 40px;
-        color: rgba(0,0,0,.87);
+        color: rgba(0, 0, 0, .87);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        h2{
+
+        h2 {
             font-size: 30px;
             font-weight: 600;
         }
-        p{
+
+        p {
             padding-top: 16px;
             font-size: 17px;
             font-weight: 500;
-            color: rgba(0,0,0,.87);
+            color: rgba(0, 0, 0, .87);
         }
-        .rewards-steps{
-         padding-top: 48px;
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center;
-          text-align: center;
-          margin: 0 50px;
+
+        .rewards-steps {
+            padding-top: 48px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            margin: 0 50px;
 
 
-          .rewards-item{
-            width: 28.3%;
-            span{
-                display: inline-block;
-                color: #00754a;
-                font-size: 25px;
-                font-weight: 700;
-                border: #00754a solid 2px;
-                border-radius: 50%;
-                width: 55px;
-                height: 55px;
-                padding-top: 9px;
-              }
+            .rewards-item {
+                width: 28.3%;
 
-              h3{
-                font-size: 21px;
-                padding-top: 24px;
-                font-weight: 600;
-              }
+                span {
+                    display: inline-block;
+                    color: #00754a;
+                    font-size: 25px;
+                    font-weight: 700;
+                    border: #00754a solid 2px;
+                    border-radius: 50%;
+                    width: 55px;
+                    height: 55px;
+                    padding-top: 9px;
+                }
 
-              p{
-                font-size: 18px;
-                letter-spacing: 0.2px;
-                padding-bottom: 16px;
-                    a{
-                     font-size: inherit;
-                     font-weight: inherit;
+                h3 {
+                    font-size: 21px;
+                    padding-top: 24px;
+                    font-weight: 600;
+                }
+
+                p {
+                    font-size: 18px;
+                    letter-spacing: 0.2px;
+                    padding-bottom: 16px;
+
+                    a {
+                        font-size: inherit;
+                        font-weight: inherit;
                     }
 
-              }
+                }
 
-              a{
-                color:#00754a;
-                text-decoration: underline;
-                cursor: pointer;
-                font-size: 20px;
-                font-weight: 500;
+                a {
+                    color: #00754a;
+                    text-decoration: underline;
+                    cursor: pointer;
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+
+                img {
+                    width: 112px;
+                    height: 112px;
+                }
             }
-
-              img{
-                width: 112px;
-                height: 112px;
-              }
-          }
 
 
 
@@ -168,11 +178,20 @@ padding-left: 40px;
     }
 }
 
-.rewards-section3{
+.rewards-section3 {
     background-color: #f2f0eb;
-    margin: 0!important;
-    padding: 48px 40px;
+
+    .rewards-steps {
+        display: flex;
+
+    }
+
+    .rewards-item::nth-child(3) {
+        flex-grow: 5;
+    }
+
 }
+
 .change--block {
     height: 285px;
     background-color: #d4e9e2;
@@ -181,13 +200,16 @@ padding-left: 40px;
     box-shadow: inset 0 7px 9px -7px rgb(0 0 0 / 14%);
     align-items: center;
     width: 100%;
+
     img {
         width: 375px;
         height: 211px;
     }
+
     h3 {
         font-size: 25px;
     }
+
     p {
         margin-top: 20px;
         height: 72px;
@@ -196,15 +218,18 @@ padding-left: 40px;
         color: #000;
     }
 }
+
 .change--block-text {
     padding-left: 50px;
 }
+
 .change--block-wrapper {
     width: 270px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .active--price {
     color: colors.$dark_green;
     border-bottom: 5px solid colors.$dark_green;

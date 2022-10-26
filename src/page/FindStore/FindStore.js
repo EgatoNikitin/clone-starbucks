@@ -5,7 +5,7 @@ import {Footer} from '../../componentns/Footer/Footer';
 import mapboxgl from '!mapbox-gl';
 import {useEffect, useRef, useState} from 'react';
 import './FindStore.scss';
-import icon from '../../imgs/search-icon.png';
+import icon from '../../imgs/search.png';
 
 // eslint-disable-next-line max-len
 mapboxgl.accessToken = 'pk.eyJ1IjoidWxhZHppc2xhdWt1dGFya2luIiwiYSI6ImNsOWlxaXpqcjBzdGwzdm8wc3hiMm54bmgifQ.ls-C6QqaLgKpapbaZYeI-w';
@@ -57,8 +57,15 @@ export const FindStore = ()=>{
           </div>
           <h2>No stores were found.</h2>
           <h4>Do you want to look further away?</h4>
+
+          <div className='findstore-links'>
+            <a>Privacy Statement</a>
+            <a>Terms of Use</a>
+          </div>
         </div>
+
         <div ref={mapContainer} className="map-container" />
+
       </div>
 
     </>

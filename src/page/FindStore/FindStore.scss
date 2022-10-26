@@ -2,24 +2,28 @@
   display: flex;
   width: 100%;
   box-sizing: border-box;
+  padding-left: 40px;
+  color: rgba(0, 0, 0, .87);
+  letter-spacing: 0.3px;
 
   .search-wrapper {
     display: flex;
     flex-direction: column;
-    padding-left: 40px;
-
-    width: 30%;
+    width: 38%;
 
     .input-wrapper {
       border-bottom: 1px solid rgba(0, 0, 0, .58);
       margin: 24px 0px;
-      width: 70%;
+      width: 75%;
       display: flex;
       justify-content: space-between;
 
       input {
         all: unset;
         height: 35px;
+        font-weight: 400;
+        font-size: 22px;
+        width: 90%;
       }
 
       img {
@@ -30,19 +34,51 @@
     }
 
     h2 {
-      margin-bottom: 16px;
+      margin: 24px 0 16px;
+      font-size: 30px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
     }
 
     h4 {
-      margin-bottom: 16px;
+      color: rgba(0, 0, 0, .58);
+      font-weight: 500;
+      font-size: 18px;
     }
+
+    .findstore-links {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      padding: 24px 0;
+      color: rgba(0, 0, 0, .58);
+      font-weight: 500;
+      font-size: 18px;
+
+
+      a {
+        cursor: pointer;
+      }
+
+      a:first-child {
+        border-right: 1px solid rgba(0, 0, 0, .58);
+        padding-right: 8px;
+      }
+
+      a:last-child {
+        margin-left: 8px;
+      }
+
+    }
+
+
   }
 
   .map-container {
 
     height: 89vh;
     overflow-y: hidden;
-    width: 70%;
+    width: 62%;
 
   }
 }
