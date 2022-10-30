@@ -1,0 +1,24 @@
+.featured-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    .featured-card--wrapper {
+
+        width: 500px;
+
+        .featured-card--img {
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .featured-card--text {
+            background-color: #006241;
+            color: white;
+        }
+
+    }
+}

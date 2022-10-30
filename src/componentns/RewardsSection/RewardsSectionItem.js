@@ -12,7 +12,7 @@ export const RewardsSectionItem = ({array}) => {
             <h3>{el.title}</h3>
             <p>{el.text}</p>
           </div>);
-      } else if (el.icon) {
+      } else if (el.icon && el.link) {
         return (<div className='rewards-item'>
           <img src={el.icon} />
           <h3>{el.title}</h3>
@@ -23,6 +23,14 @@ export const RewardsSectionItem = ({array}) => {
         return (<div className='rewards-item'>
           <h3>{el.title}</h3>
           <p>{el.text}</p>
+        </div>);
+      } else if (!el.span && el.icon && !el.link) {
+        return (<div className='row rewards-item'>
+          <div className='section3-img'><img src={el.icon} /></div>
+          <div className='section3-text'>
+            <h3>{el.title}</h3>
+            <p>{el.text}</p>
+          </div>
         </div>);
       }
     });

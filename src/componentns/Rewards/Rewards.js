@@ -81,7 +81,7 @@ export const Rewards = ()=>{
         <div className='rewards-title'>
           <h2>Star Codes</h2>
           <p>Yesssss. You’ve got Stars in your hand.
-             Enter your code here and we’ll add Stars to your account.</p>
+             Enter your code here and we’ll add Stars to your account.</p>n
           <PasswordInput/>
           <Buttons type='light' text='Submit'/>
         </div>
@@ -147,6 +147,7 @@ export const Rewards = ()=>{
         </div>
 
       </div>
+
     </div>
 
   );

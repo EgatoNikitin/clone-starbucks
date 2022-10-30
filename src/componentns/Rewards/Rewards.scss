@@ -22,6 +22,7 @@
             0 0 2px 0 rgb(0 0 0 / 24%);
         position: sticky;
         top: 80px;
+        z-index: 2;
 
     }
 
@@ -182,8 +183,13 @@
 .rewards-section3 {
     background-color: #f2f0eb;
     padding: 48px 40px;
+    position: relative;
 
-
+    hr {
+        position: absolute;
+        bottom: 50%;
+        width: 100%;
+    }
 
     .rewards-section {
         margin: 0 !important;
@@ -194,6 +200,8 @@
         width: 48%;
         padding-bottom: 64px;
     }
+
+
 
     .rewards-steps {
         display: flex;
@@ -208,6 +216,12 @@
             flex-direction: column;
             align-items: flex-start;
 
+            .section3-text {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+            }
+
             &:nth-child(1) {
                 width: 15% !important;
             }
@@ -218,9 +232,15 @@
 
 
             img {
-                display: inline-block;
                 object-fit: contain;
+                display: block;
             }
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            // position: relative;
         }
     }
 

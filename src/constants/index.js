@@ -12,6 +12,8 @@ import scan from '../imgs/rewards/scan.png';
 import save from '../imgs/rewards/save.png';
 import register from '../imgs/rewards/register.png';
 import preload from '../imgs/rewards/preload.png';
+import {FEATURED_CARDS_ICONS} from './images';
+
 import {
   BREWED_COFFEE,
   AMERICANO,
@@ -52,7 +54,6 @@ export const FOOTER_TITLES = {
   BUSINESS: 'For Business Partners',
   ORDER: 'Order and Pickup',
 };
-
 export const FOOTER_LISTS = {
   ABOUT_US: [
     'Our Company',
@@ -89,7 +90,6 @@ export const FOOTER_LISTS = {
     'Explore and Find Coffee for Home',
   ],
 };
-
 export const MAIN_CONTENT = [
   {
     text: 'Ordering your fall favorites is a snap with the app. ' +
@@ -1565,8 +1565,6 @@ export const CATEGORIES = {
     },
   ],
 };
-
-
 export const REW = {
   section1: {
     title: 'Getting started is easy',
@@ -1635,7 +1633,52 @@ export const REW = {
       },
     ],
   },
+  section4: {
+    title: 'Star Codes',
+    subtitle: 'Yesssss. You’ve got Stars in your hand. Enter your code here and we’ll add Stars to your account.',
+  },
 };
-
+export const FEATURED_CARD = [
+  {
+    url: FEATURED_CARDS_ICONS.fci,
+    title: 'Pumpkin Spice Latte',
+    text: 'Espresso and steamed milk with pumpkin, cinnamon and nutmeg flavors, topped with whipped cream.',
+  },
+  {
+    url: FEATURED_CARDS_ICONS.fci2,
+    title: 'Pumpkin Cream Cold Brew',
+    text: 'Cold brew sweetened with vanilla, finished with pumpkin cream cold foam and a dusting of pumpkin spice topping.',
+  },
+  {
+    url: FEATURED_CARDS_ICONS.fci3,
+    title: 'Apple Crisp Oatmilk Macchiato',
+    text: 'Layers of Starbucks® Blonde Espresso, warm spices, brown sugar and creamy oatmilk.',
+  },
+  {
+    url: FEATURED_CARDS_ICONS.fci4,
+    title: 'Iced Apple Crisp Oatmilk Macchiato',
+    text: 'A cool combination of baking spices layered with oatmilk and Starbucks® Blonde Espresso.',
+  },
+  {
+    url: FEATURED_CARDS_ICONS.fci5,
+    title: 'Chai Tea Latte',
+    text: 'Black tea infused with warming spices, swirled with steamed milk.',
+  },
+  {
+    url: FEATURED_CARDS_ICONS.fci6,
+    title: 'Iced Chai Tea Latte',
+    text: 'A cool mingling of milk and black tea infused with warming spices.',
+  },
+  {
+    url: FEATURED_CARDS_ICONS.fci7,
+    title: 'Pumpkin & Pepita Loaf',
+    text: 'Gently spiced pumpkin bread capped with crunchy pepitas.',
+  },
+  {
+    url: FEATURED_CARDS_ICONS.fci8,
+    title: 'Chocolate Cake Pop',
+    text: 'Bite-sized chocolate cake and chocolate buttercream covered in chocolaty icing.',
+  },
+];
 
 

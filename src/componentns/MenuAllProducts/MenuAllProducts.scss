@@ -1,0 +1,102 @@
+li {
+    list-style: none;
+}
+.top--list {
+    position: sticky;
+    z-index:10;
+    top: 80px;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    padding: 0 7%;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    border-top: 2px solid rgb(211, 211, 211);
+    align-items: center;
+    height: 52px;
+    .top--list-item {
+        font-size: 13px;
+        height: 20px;
+        display: inline-block;
+        list-style: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+        position: relative;
+        &:first-child::after {
+            content: "";
+            margin-block: -4px;
+            width: 100%;
+            height: 1px;
+            border-radius: 4px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: black;
+        }
+    }
+}
+.main--container {
+    margin: 0 7.5%;
+    display: flex;
+}
+
+.sticky--bottom {
+    display: flex;
+    align-items: center;
+    height: 94px;
+    background-color: #1e3932;
+    position: sticky;
+    z-index: 5;
+    bottom: 0;
+    padding: 0 400px;
+    img {
+        width: 32px;
+        height: 32px;
+        filter: invert(97%) sepia(2%) saturate(3%) hue-rotate(29deg) brightness(107%) contrast(100%);
+    }
+    .arrow-down {
+        width: 12px;
+        height: 12px;
+    }
+    .sticky--bottom-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .span--container {
+            border-bottom: 2px solid rgb(141, 141, 141);
+            width: 240px;
+            height: 56px;
+            display: flex;
+            flex-direction: column;
+            span {
+                font-size: 20px;
+                color: rgba(168, 168, 168, 0.58);
+                &:last-child {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.menu--container {
+    width: 85%;
+    padding: 40px 130px 0 119px;
+    display: flex;
+    flex-direction: column;
+    .MenuCard--item {
+        img {
+            width: 112px;
+            height: 112px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+}
+.main--container {
+    margin-bottom: 100px;
+}
+.main--menu {
+    margin: 0;
+}

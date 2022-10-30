@@ -6,6 +6,7 @@ import icon200 from '../../imgs/rewards/200.png';
 import icon400 from '../../imgs/rewards/400.png';
 import {CardItem} from './CardItem/CardItem';
 
+
 export const RewardsCard = ({price})=>{
   const getContent = ()=>{
     switch (price) {

@@ -297,9 +297,14 @@ import enc2 from '../imgs/giftcard-img/encouragement/encouragement2.jpg';
 import enc3 from '../imgs/giftcard-img/encouragement/encouragement3.jpg';
 import enc4 from '../imgs/giftcard-img/encouragement/encouragement4.jpg';
 import enc5 from '../imgs/giftcard-img/encouragement/encouragement5.jpg';
-
-
-
+import fci from '../imgs/featuredcard/1.jpg';
+import fci2 from '../imgs/featuredcard/Pumpkin Cream Cold Brew.jpg';
+import fci3 from '../imgs/featuredcard/Apple Crisp Oatmilk Macchiato.jpg';
+import fci4 from '../imgs/featuredcard/Iced Apple Crisp Oatmilk Macchiato.jpg';
+import fci5 from '../imgs/featuredcard/Chai Tea Latte.jpg';
+import fci6 from '../imgs/featuredcard/Iced Chai Tea Latte.jpg';
+import fci7 from '../imgs/featuredcard/Pumpkin & Pepita Loaf.jpg';
+import fci8 from '../imgs/featuredcard/Chocolate Cake Pop.jpg';
 
 export const BREWED_COFFEE = {
   caffeMisto,
@@ -553,3 +558,14 @@ export const GIFTCARD_ENCOURAGEMENT = [
   enc4,
   enc5,
 ];
+
+export const FEATURED_CARDS_ICONS = {
+  fci,
+  fci2,
+  fci3,
+  fci4,
+  fci5,
+  fci6,
+  fci7,
+  fci8,
+};
