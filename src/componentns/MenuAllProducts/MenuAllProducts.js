@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import {Header} from '../Header/Header';
 import {FILTERS, CATEGORIES} from '../../constants';
 
@@ -11,7 +10,7 @@ import {FilterList} from '../FilterList/FilterList';
 import {MenuCard} from '../MenuCard/MenuCard';
 import {useEffect, useState} from 'react';
 import {ItemModal} from '../ItemModal/ItemModal';
-import {Link} from 'react-router-dom';
+import {MenuHeader} from '../MenuHeader/MenuHeader';
 
 export const MenuAllProducts = () => {
   const [activeFilter, setActiveFilter] = useState(
@@ -50,37 +49,33 @@ export const MenuAllProducts = () => {
         setActiveFilter={setActiveFilter} />
       {
         !isOpen ? (
-            <><ul className='top--list'>
-              <Link to='/menu'><li className='top--list-item'>All products</li></Link>
-              <Link to='/menu/featured'><li className='top--list-item'>Featured</li></Link>
-              <li className='top--list-item'>Previous Orders</li>
-              <li className='top--list-item'>Favorite Products</li>
-            </ul>
-            <main className='main--menu'>
-              <div className='main--container'>
-                <div className='filter--container'>
-                  {FILTERS.map((el, index)=> {
-                    return <FilterList
-                      setActiveFilter = {setActiveFilter}
-                      key={index}
-                      title={el.title}
-                      arrayOfItems={el.listOfItems} />;
-                  })}
-                </div><div className='menu--container'>
-                  <h1>{activeFilter}</h1>
-                  {CATEGORIES[activeFilter].map((el, index)=> {
-                    return <MenuCard
-                      cardStyle={cardStyle}
-                      key={index}
-                      url={el.url}
-                      title={el.title}
-                      arrayOfItems={el.listOfItems}
-                      itemClickHandler={itemClickHandler}
-                    />;
-                  })}
+            <>
+              <MenuHeader/>
+              <main className='main--menu'>
+                <div className='main--container'>
+                  <div className='filter--container'>
+                    {FILTERS.map((el, index)=> {
+                      return <FilterList
+                        setActiveFilter = {setActiveFilter}
+                        key={index}
+                        title={el.title}
+                        arrayOfItems={el.listOfItems} />;
+                    })}
+                  </div><div className='menu--container'>
+                    <h1>{activeFilter}</h1>
+                    {CATEGORIES[activeFilter].map((el, index)=> {
+                      return <MenuCard
+                        cardStyle={cardStyle}
+                        key={index}
+                        url={el.url}
+                        title={el.title}
+                        arrayOfItems={el.listOfItems}
+                        itemClickHandler={itemClickHandler}
+                      />;
+                    })}
+                  </div>
                 </div>
-              </div>
-            </main>
+              </main>
             </>
         ) : (
             <ItemModal

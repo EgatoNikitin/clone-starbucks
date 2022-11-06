@@ -50,7 +50,9 @@ export const Header = ({setActiveFilter = noop}) => {
         </div>
         <div className='header--left'>
           <div className='header--location'>
-            <NavLink to='/find'>
+            <NavLink to='/find'
+              className='header--nav'
+            >
               <img src={locationPin}
                 alt='location-pin'
                 className='location--pin' />

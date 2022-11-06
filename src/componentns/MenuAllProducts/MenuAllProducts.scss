@@ -1,40 +1,7 @@
 li {
-    list-style: none;
-}
-.top--list {
-    position: sticky;
-    z-index:10;
-    top: 80px;
-    background-color: rgb(243, 243, 243);
-    display: flex;
-    padding: 0 7%;
-    border-bottom: 1px solid rgb(207, 207, 207);
-    border-top: 2px solid rgb(211, 211, 211);
-    align-items: center;
-    height: 52px;
-    .top--list-item {
-        font-size: 13px;
-        height: 20px;
-        display: inline-block;
-        list-style: none;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        margin-right: 40px;
-        position: relative;
-        &:first-child::after {
-            content: "";
-            margin-block: -4px;
-            width: 100%;
-            height: 1px;
-            border-radius: 4px;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            background-color: black;
-        }
-    }
-}
+     list-style: none;
+ }
+
 .main--container {
     margin: 0 7.5%;
     display: flex;
