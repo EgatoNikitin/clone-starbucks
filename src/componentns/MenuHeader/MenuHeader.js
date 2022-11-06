@@ -14,7 +14,9 @@ export const MenuHeader = ()=>{
           (isActive ? 'navLinkMenu': null )}
         end={true}
         ><li className='top--list-item'>Featured</li></NavLink>
-        <li className='top--list-item'>Previous Orders</li>
+        <NavLink to='/menu/previous' className={({isActive}) =>
+          (isActive ? 'navLinkMenu': null )}
+        end={true}><li className='top--list-item'>Previous Orders</li></NavLink>
         <li className='top--list-item'>Favorite Products</li>
       </ul>
     </div>

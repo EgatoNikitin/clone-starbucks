@@ -4,6 +4,7 @@ import {Buttons} from '../Buttons/Buttons';
 import {FEATURED_CARD} from '../../constants';
 import {Header} from '../Header/Header';
 import {MenuHeader} from '../MenuHeader/MenuHeader';
+import {Footer} from '../Footer/Footer';
 
 export const FeaturedCard = ()=>{
   return (
@@ -15,21 +16,22 @@ export const FeaturedCard = ()=>{
           FEATURED_CARD.map(({text, title, url}, index)=>{
             return (
               <div key={index} className='featured-card--wrapper'>
-                <div className='featured-card--img'>
-                  <img src={url} alt='cakes icon'/>
-                </div>
+
+                <img src={url} alt='cakes icon' className='featured-card--img'/>
                 <div className='featured-card--text'>
                   <h4>{title}</h4>
                   <div>
                     {text}
                   </div>
-                  <Buttons type='light' text='' size='large'/>
+                  <Buttons type='light' text='Order now' size='large'/>
+
                 </div>
               </div>
             );
           },
           )}
       </main>
+      <Footer/>
     </>
   );
 };
