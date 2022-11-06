@@ -16,7 +16,7 @@
     .centred-block {
       max-width: 455px;
       height: 320px;
-      justify-content: space-between;
+      justify-content: space-evenly;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -67,7 +67,15 @@
 
     .main-card--description {
       width: 100%;
-      height: 46vh;
+      height: 35vh;
+
+      h4 {
+        font-size: 28px !important;
+      }
+
+      .description--text {
+        font-size: 22px !important;
+      }
     }
 
     .main-card--img {
