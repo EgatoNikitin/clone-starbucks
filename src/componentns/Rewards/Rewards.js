@@ -9,8 +9,12 @@ import {PasswordInput} from '../PasswordInput/PasswordInput';
 
 
 export const Rewards = ()=>{
+  const [passwordValue, setPasswordValue] = useState('');
   const [price, setPrice]=useState('25');
-
+  const handlChangeInput = (value) =>{
+    setPasswordValue(value);
+    console.log(value);
+  };
   // Если будуте вставлять картинку вместо текста
   // то .slice(0,-1) необходимо удалить
   const handleSelect = (value)=>{
@@ -68,28 +72,32 @@ export const Rewards = ()=>{
         <RewardsSectionItem array={REW.section2.arrayItem}/>
       </RewardsSection>
 
-      <div className='rewards-section3 '>
+      <div className='rewards-section3'>
         <RewardsSection
           title={REW.section3.title}
           subtitle={REW.section3.subtitle}>
           <RewardsSectionItem array={REW.section3.arrayItem}/>
         </RewardsSection>
-        <hr/>
+        <div className='line'></div>
       </div>
 
       <div className='rewards-section4 rewards-section'>
         <div className='rewards-title'>
           <h2>Star Codes</h2>
           <p>Yesssss. You’ve got Stars in your hand.
-             Enter your code here and we’ll add Stars to your account.</p>n
-          <PasswordInput/>
+             Enter your code here and we’ll add Stars to your account.</p>
+          <PasswordInput
+            showicon={false}
+            passwordValue={passwordValue}
+            passwordChangeHanlder={handlChangeInput}
+            placeholder="Enter your Star Code"/>
           <Buttons type='light' text='Submit'/>
         </div>
         <div className='rewards-title'>
           <h2>Questions?</h2>
           <p>We want to help in any way we can. You can ask your barista
-            anytime or we’ve answered the most commonly asked questions
-          <a>right over here.</a></p>
+            anytime or we’ve answered the most commonly asked
+             questions <a href='#'>right over here</a> .</p>
         </div>
       </div>
 

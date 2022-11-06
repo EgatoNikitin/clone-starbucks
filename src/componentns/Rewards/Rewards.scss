@@ -1,7 +1,5 @@
 @use "../../utils/colors";
 
-
-
 .rewards--wrapper {
     width: 100%;
     position: relative;
@@ -18,30 +16,27 @@
         padding: 0 40px 0 131px;
         display: flex;
         align-items: center;
-        box-shadow: 0 4px 4px 0 rgb(0 0 0 / 12%),
-            0 0 2px 0 rgb(0 0 0 / 24%);
+        box-shadow: 0 4px 4px 0 rgb(0 0 0 / 12%), 0 0 2px 0 rgb(0 0 0 / 24%);
         position: sticky;
         top: 80px;
         z-index: 2;
-
     }
 
     .rewards--join {
-
         background-color: rgb(212, 233, 226);
         background-image: url(../../imgs/rewards/unnamed.png);
         background-position: right;
         background-repeat: no-repeat;
         background-size: contain;
-        height: 39.5vW;
-        color: rgba(0, 0, 0, .87);
+        height: 39.5vw;
+        color: rgba(0, 0, 0, 0.87);
 
         display: flex;
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
 
-        padding-left: 40px;
+        padding-left: 240px;
 
         h2 {
             font-size: 36px;
@@ -49,13 +44,11 @@
         }
 
         p {
-            color: rgba(0, 0, 0, .87);
+            color: rgba(0, 0, 0, 0.87);
             font-size: 19px;
             padding: 16px 0 32px;
             font-weight: 500;
         }
-
-
 
         a {
             text-decoration: underline;
@@ -97,8 +90,9 @@
     }
 
     .rewards-section {
-        margin: 128px 40px;
-        color: rgba(0, 0, 0, .87);
+        margin-top: 40px;
+        margin-bottom: 40px;
+        color: rgba(0, 0, 0, 0.87);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -114,7 +108,7 @@
             padding-top: 16px;
             font-size: 17px;
             font-weight: 500;
-            color: rgba(0, 0, 0, .87);
+            color: rgba(0, 0, 0, 0.87);
         }
 
         .rewards-steps {
@@ -124,7 +118,6 @@
             align-items: center;
             text-align: center;
             margin: 0 50px;
-
 
             .rewards-item {
                 width: 28.3%;
@@ -156,7 +149,6 @@
                         font-size: inherit;
                         font-weight: inherit;
                     }
-
                 }
 
                 a {
@@ -166,16 +158,7 @@
                     font-size: 20px;
                     font-weight: 500;
                 }
-
-                img {
-                    width: 112px;
-                    height: 112px;
-                }
             }
-
-
-
-
         }
     }
 }
@@ -183,39 +166,45 @@
 .rewards-section3 {
     background-color: #f2f0eb;
     padding: 48px 40px;
-    position: relative;
-
     hr {
         position: absolute;
-        bottom: 50%;
-        width: 100%;
+        top: 60%;
+        width: 50%;
     }
 
     .rewards-section {
-        margin: 0 !important;
-
+        margin: 0 auto !important;
     }
-
+    .rewards-steps {
+        position: relative;
+        height: 450px;
+    }
     .rewards-title {
         width: 48%;
         padding-bottom: 64px;
     }
 
-
-
     .rewards-steps {
         display: flex;
         flex-flow: row wrap;
         margin: 0 !important;
+        padding: 0 !important;
         justify-content: space-between !important;
-
 
         .rewards-item {
             width: 40% !important;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-
+            h3 {
+                padding: 0 !important;
+            }
+            .section3-img {
+                img {
+                    max-height: 158px;
+                    margin-right: 10px;
+                }
+            }
             .section3-text {
                 display: flex;
                 flex-direction: column;
@@ -230,34 +219,47 @@
                 width: 15% !important;
             }
 
-
             img {
                 object-fit: contain;
                 display: block;
             }
         }
-
+        @media (min-width: 1441px) {
+            .rewards-steps {
+                width: 70%;
+            }
+        }
         .row {
             display: flex;
             flex-direction: row;
             // position: relative;
         }
     }
-
-
 }
 
 .rewards-section4 {
+    padding-bottom: 100px;
+    margin: 0 auto;
+    padding-top: 50px;
     display: flex;
     align-items: flex-start !important;
     justify-content: space-between !important;
-    height: 500px;
+    height: 600px;
     width: 60%;
-
+    button {
+        margin-top: 20px;
+        float: right;
+    }
 
     .rewards-title {
-        margin-left: 250px;
+        width: 709px;
+        margin: 0 auto;
         text-align: left;
+        a {
+            color: #00754a;
+            text-decoration: underline;
+            cursor: pointer;
+        }
     }
 }
 
@@ -295,9 +297,8 @@
     align-items: flex-start !important;
     padding: 48px 40px;
 
-
     h5 {
-        color: rgba(0, 0, 0, .87);
+        color: rgba(0, 0, 0, 0.87);
         font-size: 14px !important;
         padding-bottom: 32px;
         font-weight: 500;
@@ -308,14 +309,14 @@
         flex-wrap: wrap;
 
         h4 {
-            color: rgba(0, 0, 0, .58);
+            color: rgba(0, 0, 0, 0.58);
             font-weight: 700;
             letter-spacing: 0.4px;
             font-size: 14px !important;
         }
 
         p {
-            color: rgba(0, 0, 0, .87);
+            color: rgba(0, 0, 0, 0.87);
             font-weight: 500;
             font-size: 14px !important;
 
@@ -342,9 +343,6 @@
             }
         }
     }
-
-
-
 }
 
 .change--block-text {
@@ -361,4 +359,36 @@
 .active--price {
     color: colors.$dark_green;
     border-bottom: 5px solid colors.$dark_green;
+}
+
+.line {
+    width: 95%;
+    height: 1px;
+    background-color: rgb(212, 212, 212);
+    position: absolute;
+    top: 65.5%;
+}
+
+@media (min-width: 1441px) {
+    .rewards-steps {
+        width: 78%;
+    }
+    .rewards-section5 {
+        padding: 48px 12.5%;
+    }
+    .line {
+        width: 70%;
+        left: 15%;
+    }
+    .rewards--header {
+        padding: 30px 240px !important;
+    }
+}
+@media (max-width: 1441px) {
+    .line {
+        top: 64%;
+    }
+    .rewards--join {
+        padding-left: 120px !important;
+    }
 }

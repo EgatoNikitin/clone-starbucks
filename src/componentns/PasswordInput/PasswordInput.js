@@ -4,7 +4,8 @@ import visibleIcon from '../../imgs/view.png';
 import hiddenIcon from '../../imgs/not-visible.png';
 import '../../page/LoginPage/LoginPage.scss';
 
-export const PasswordInput = ({passwordValue, passwordChangeHanlder}) => {
+export const PasswordInput =({
+  passwordValue, passwordChangeHanlder, placeholder, showicon}) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const setVisibilityHandler = ()=>{
@@ -13,11 +14,11 @@ export const PasswordInput = ({passwordValue, passwordChangeHanlder}) => {
 
   return (
     <>
-      {!isVisible ? (
+      {!isVisible && showicon ? (
         <div className="input-password" tabIndex="0">
           <input
             type="password"
-            placeholder="Password"
+            placeholder={placeholder}
             value={passwordValue}
             onChange={(e) => passwordChangeHanlder(e.target.value)}
           />
@@ -30,14 +31,14 @@ export const PasswordInput = ({passwordValue, passwordChangeHanlder}) => {
         <div className="input-password" tabIndex="0">
           <input
             type="text"
-            placeholder="Password"
+            placeholder={placeholder}
             value={passwordValue}
             onChange={(e) => passwordChangeHanlder(e.target.value)}
           />
-          <img src={visibleIcon}
+          {showicon && <img src={visibleIcon}
             alt="hidden password"
             className="visibilty-icons"
-            onClick={setVisibilityHandler}/>
+            onClick={setVisibilityHandler}/>}
         </div>
       )}
     </>
@@ -45,10 +46,13 @@ export const PasswordInput = ({passwordValue, passwordChangeHanlder}) => {
 };
 
 PasswordInput.propTypes = {
+  showicon: PropTypes.bool,
   passwordValue: PropTypes.string,
   passwordChangeHanlder: PropTypes.func,
+  placeholder: PropTypes.string,
 };
 
 PasswordInput.defaultProps = {
+  showicon: true,
   passwordValue: '',
 };

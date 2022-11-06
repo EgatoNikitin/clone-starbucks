@@ -3,16 +3,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     box-sizing: border-box;
-    width: 100%;
 
     .featured-card--wrapper {
-
         width: 49%;
         margin-top: 30px;
 
         .featured-card--img {
             width: 100%;
-
         }
 
         .featured-card--text {
@@ -33,9 +30,6 @@
             h4 {
                 font-size: 22px;
             }
-
-
         }
-
     }
 }

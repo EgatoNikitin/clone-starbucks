@@ -1,9 +1,6 @@
 import {Header} from '../Header/Header';
 import {FILTERS, CATEGORIES} from '../../constants';
 
-import Shoper from '../../imgs/shoper.svg';
-import Downicon from '../../imgs/downicon.svg';
-
 import './MenuAllProducts.scss';
 import {Footer} from '../Footer/Footer';
 import {FilterList} from '../FilterList/FilterList';
@@ -11,6 +8,7 @@ import {MenuCard} from '../MenuCard/MenuCard';
 import {useEffect, useState} from 'react';
 import {ItemModal} from '../ItemModal/ItemModal';
 import {MenuHeader} from '../MenuHeader/MenuHeader';
+import {StickyBottom} from '../StickyBottom/StickyBottom';
 
 export const MenuAllProducts = () => {
   const [activeFilter, setActiveFilter] = useState(
@@ -87,16 +85,7 @@ export const MenuAllProducts = () => {
         )
       }
       <Footer />
-      <div className='sticky--bottom'>
-        <div className='sticky--bottom-content'>
-          <div className='span--container'>
-            <span>For item availability</span>
-            <span>Choose a store</span>
-          </div>
-          <img className='arrow-down' src={Downicon} alt='arrow down'></img>
-        </div>
-        <img src={Shoper} alt='shoper'></img>
-      </div>
+      <StickyBottom/>
     </div>
   );
 };
