@@ -1,7 +1,9 @@
 @use "../../utils/colors";
+
 a {
   all: unset;
 }
+
 .header {
   min-height: 80px;
   max-height: 150px;
@@ -20,6 +22,7 @@ a {
     justify-content: space-between;
     width: 100%;
   }
+
   .header--right {
     display: flex;
     align-items: center;
@@ -50,10 +53,11 @@ a {
     width: 100%;
     max-width: 300px;
 
-    .navLink{
+    .navLink {
       display: flex;
       align-items: center;
     }
+
     .navigation--list {
       display: inherit;
       justify-content: space-between;
@@ -74,13 +78,13 @@ a {
         box-sizing: border-box;
       }
 
-      a{
+      a {
         height: 80px;
         box-sizing: border-box;
         border-bottom: 5px solid white;
       }
 
-      .active--tab{
+      .active--tab {
         color: colors.$dark_green;
         border-bottom: 5px solid colors.$dark_green;
       }
@@ -99,6 +103,7 @@ a {
     max-width: 109px;
 
     cursor: pointer;
+
     .location--pin {
       width: 23px;
       height: 23px;
@@ -114,15 +119,45 @@ a {
     filter: invert(17%) sepia(79%) saturate(6188%) hue-rotate(161deg) brightness(81%) contrast(98%);
   }
 
-  .header--nav{
+  .header--nav {
     display: flex;
   }
 }
+
 @media (max-width: 1920px) and (min-width: 1441px) {
   .header {
-    padding: 0 8%;
+    padding: 0 7%;
   }
+
+  .header--left {
+    margin-right: 80px;
+  }
+
+
 }
+
 .no-margin {
   padding: 0 1.1%;
+}
+
+@media (max-width: 767px) {
+  .header--location {
+    display: none !important;
+  }
+
+  .header--left {
+    width: 190px !important;
+  }
+
+  .header--right {
+    max-width: 210px !important;
+  }
+
+
+}
+
+@media (max-width: 550px) {
+  .header--left {
+    display: none !important;
+  }
 }

@@ -1,11 +1,11 @@
 @use '../../utils/colors';
 
-.main-card--wrapper{
+.main-card--wrapper {
   display: flex;
   width: 100%;
   margin: 32px 0;
 
-  .main-card--description{
+  .main-card--description {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -13,7 +13,7 @@
     background: colors.$dark_green;
     width: 50%;
 
-    .centred-block{
+    .centred-block {
       max-width: 455px;
       height: 320px;
       justify-content: space-between;
@@ -21,14 +21,14 @@
       flex-direction: column;
       align-items: center;
 
-      h4{
+      h4 {
         font-size: 50px;
         font-weight: 600;
         text-align: center;
         color: white;
       }
 
-      .description--text{
+      .description--text {
         color: white;
         font-size: 24px;
         font-weight: 500;
@@ -37,25 +37,43 @@
     }
   }
 
-  .main-card--img{
+  .main-card--img {
     width: 50%;
     max-height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    img{
+    img {
       width: 100%;
       height: auto;
       max-height: 550px;
+      min-height: 320px;
     }
   }
 }
 
-.left{
+.left {
   flex-direction: row;
 }
 
-.right{
+.right {
   flex-direction: row-reverse;
+}
+
+@media (max-width: 767px) {
+  .main-card--wrapper {
+    flex-direction: column;
+
+    .main-card--description {
+      width: 100%;
+      height: 46vh;
+    }
+
+    .main-card--img {
+      width: 100%;
+    }
+  }
+
+
 }
