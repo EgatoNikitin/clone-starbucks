@@ -2,6 +2,7 @@
     left: 3% !important;
     z-index: 1;
 }
+
 .slick-next {
     right: 3% !important;
     z-index: 1;
@@ -18,22 +19,26 @@
 .slick-next {
     height: 46px !important;
 }
+
 .slider--wrapper {
     padding-left: 125px;
 }
+
 .slick-slider {
     .slick-list {
         margin-bottom: 40px;
         border-radius: 10px;
+
         .slick-track {
             display: flex;
             margin-top: 10px;
             margin-left: 0;
             height: 13vw;
-            .slick-slide{
+
+            .slick-slide {
                 display: flex;
                 align-items: center;
-                }
+            }
         }
     }
 }
@@ -53,28 +58,80 @@
     }
 }
 
-.slick-slide.slick-active[data-index="4"],[data-index="8"],[data-index="12"],[data-index="15"]{
-    opacity: 0.2;
-}
-
-.slick-slide:not(.slick-active) {
-    opacity: 0.5;
- }
-
 .FEATUREDtitle {
     display: flex;
     justify-content: space-between;
     margin: 30px 0px 20px 0px;
-    h4{
-        color: rgba(0,0,0,.87);
+
+    h4 {
+        color: rgba(0, 0, 0, .87);
         letter-spacing: .1em;
     }
+
     a {
-      margin-right: 35px;
-      color: #00754a;
-      font-weight: 600;
-      font-size: 1.18rem;
-      cursor: pointer;
+        margin-right: 35px;
+        color: #00754a;
+        font-weight: 600;
+        font-size: 1.18rem;
+        cursor: pointer;
     }
-  }
-  
+}
+
+@media (max-width:500px) {
+    .slider--wrapper {
+        padding-left: 2.7%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 30px !important;
+    }
+}
+
+@media (min-width:501px) and (max-width:700px) {
+    .slider--wrapper {
+        padding-left: 2.7%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 35px !important;
+    }
+}
+
+@media (min-width:701px) and (max-width:1012px) {
+    .slider--wrapper {
+        padding-left: 2.7%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 40px !important;
+    }
+}
+
+@media (min-width: 1013px) and (max-width: 1440px) {
+    .slider--wrapper {
+        padding-left: 2.7%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 50px !important;
+    }
+}
+
+
+@media (min-width: 1441px) and (max-width: 1919px) {
+    .slider--wrapper {
+        padding-left: 11.4%;
+    }
+
+
+}
+
+@media (min-width: 1920px) {
+    .slider--wrapper {
+        padding-left: 2.7%;
+    }
+}

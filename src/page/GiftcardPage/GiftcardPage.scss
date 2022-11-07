@@ -1,9 +1,9 @@
-h2{
-  color: rgba(0,0,0,.87);
+h2 {
+  color: rgba(0, 0, 0, .87);
 }
 
-p{
-  color: rgba(0,0,0,.58);
+p {
+  color: rgba(0, 0, 0, .58);
 }
 
 .GiftCard--banner {
@@ -14,20 +14,24 @@ p{
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   a {
     color: #006241 !important;
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
   }
+
   .GiftCard--banner-wrapper {
     width: 665px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     h2 {
       font-weight: 600;
     }
+
     p {
       font-size: 20px;
       font-weight: 500;
@@ -45,14 +49,17 @@ p{
   font-weight: 600;
   border: 1px solid #000;
   border-radius: 40px;
+
   &:hover {
     background-color: #b8c9c3;
     transition: all 0.2s;
   }
+
   &:last-child {
     background-color: #000;
     color: #fff;
   }
+
   &:last-child:hover {
     background-color: rgb(61, 61, 61);
     transition: all 0.2s;
@@ -64,34 +71,42 @@ p{
   width: 100%;
   height: 224px;
   background-color: #edebe9 !important;
-  h2{
+
+  h2 {
     font-size: 16px;
     font-weight: 700;
     letter-spacing: .1em;
   }
+
   p {
     width: 444px;
     font-weight: 500;
-    color: rgba(0,0,0,.87);
+    color: rgba(0, 0, 0, .87);
     font-size: 18px;
     letter-spacing: +.02em;
     padding: 16px 0 8px 0;
   }
+
   .support--baner-buttons {
     margin-top: 16px;
+
     button {
       &:hover {
         background-color: #d3d3d3;
         transition: all 0.2s;
       }
+
       margin-right: 16px;
+
       &:nth-child(2) {
         width: 214px;
       }
+
       &:last-child {
         width: 214px;
         background: none;
         color: #000;
+
         &:hover {
           background-color: #d3d3d3;
           transition: all 0.2s;
@@ -108,32 +123,165 @@ p{
   display: flex;
   align-items: center;
   background-color: #f9f9f9 !important;
+
   img {
     width: 375px;
     height: 250px;
     margin-right: 40px;
   }
+
   .bulk--baner-wrapper {
     letter-spacing: +.03em;
     line-height: 1.5;
     font-weight: 500;
+
     h2 {
       margin-top: 10px;
       font-size: 25px;
       font-weight: 500;
     }
+
     p {
       margin: 10px 0 10px 0;
       width: 303px;
       height: 120px;
     }
+
     button {
       background: none;
       color: #000;
+
       &:hover {
         background-color: #d3d3d3;
         transition: all 0.2s;
       }
     }
+  }
+}
+
+@media (max-width: 710px) {
+  .GiftCard--banner-wrapper {
+    justify-content: left !important;
+  }
+}
+
+@media (max-width: 740px) {
+  .bulk--baner {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: flex-start;
+    height: 520px;
+
+    img {
+      width: 345px;
+      height: 220px;
+    }
+  }
+
+  .support--baner {
+    height: 80%;
+
+    p {
+      width: 100%;
+    }
+
+    .support--baner-buttons {
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+  }
+}
+
+@media (max-width: 745px) {
+  .GiftCard--banner {
+    height: 250px;
+    justify-content: space-evenly !important;
+
+    .GiftCard--banner-wrapper {
+      flex-direction: column;
+      align-items: flex-start !important;
+      width: 80%;
+
+      button {
+        margin-top: 10px;
+      }
+    }
+  }
+
+
+}
+
+@media (max-width: 910px) {
+  .GiftCard--banner {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1013px) {
+  .GiftCard--banner {
+    a {
+      font-size: 16px;
+    }
+
+    .GiftCard--banner-wrapper {
+      h2 {
+        font-weight: 500;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+
+
+
+@media (max-width: 1440px) {
+  .GiftCard--banner {
+    padding: 0px 40px 0px 2.7%;
+  }
+
+  .bulk--baner {
+    padding-left: 2.7%;
+  }
+
+  .support--baner {
+    padding: 40px 40px 40px 2.7%;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1919px) {
+  .GiftCard--banner {
+    padding: 0px 40px 0px 11.4%;
+  }
+
+  .bulk--baner {
+    padding-left: 11.4%;
+  }
+
+  .support--baner {
+    padding: 40px 40px 40px 11.4%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .GiftCard--banner {
+    padding: 0px 40px 0px 2.7%;
+  }
+
+  .bulk--baner {
+    padding-left: 2.7%;
+  }
+
+  .support--baner {
+    padding: 40px 40px 40px 2.7%;
   }
 }

@@ -3,7 +3,7 @@
 .footer {
   border-top: 2px solid rgba(145, 139, 130, 0.35);
   margin-top: 48px;
-  padding: 48px 7% 32px 3%;
+  padding: 48px 7% 32px 2.7%;
 
   .footer--social-media {
     display: flex;
@@ -84,12 +84,6 @@
   }
 }
 
-@media (min-width: 1441px) {
-  .footer {
-    padding: 48px 7% 32px 12.5%;
-  }
-}
-
 @media (max-width: 767px) {
   .footer {
     border-top: 0;
@@ -109,5 +103,17 @@
     span {
       display: none;
     }
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1919px) {
+  .footer {
+    padding: 48px 7% 32px 11.4%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .footer {
+    padding: 48px 7% 32px 2.7%;
   }
 }
