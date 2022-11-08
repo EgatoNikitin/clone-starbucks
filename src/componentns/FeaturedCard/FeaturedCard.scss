@@ -33,3 +33,13 @@
         }
     }
 }
+
+@media (max-width:767px) {
+    .featured-card {
+        flex-direction: column;
+
+        .featured-card--wrapper {
+            width: 100%;
+        }
+    }
+}

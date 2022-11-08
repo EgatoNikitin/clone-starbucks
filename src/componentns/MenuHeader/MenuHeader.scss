@@ -1,9 +1,15 @@
-li {
-  list-style: none;
+a {
+  margin-right: 20px;
+
+  li {
+    list-style: none;
+
+  }
 }
+
 .top--list-wrapper {
   position: sticky;
-  z-index:10;
+  z-index: 10;
   top: 80px;
   background-color: rgb(243, 243, 243);
   display: flex;
@@ -12,14 +18,16 @@ li {
   border-top: 2px solid rgb(211, 211, 211);
   align-items: center;
   height: 52px;
-  .top--list{
-    width: 30%;
+
+  .top--list {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
   }
+
   .navLinkMenu {
     border-bottom: 2px solid black;
   }
+
   .top--list-item {
     font-size: 13px;
     height: 20px;
