@@ -6,11 +6,13 @@ li {
     margin: 0 7%;
     display: flex;
 }
+
 .menu--container {
     width: 85%;
     padding: 40px 130px 0 119px;
     display: flex;
     flex-direction: column;
+
     .MenuCard--item {
         img {
             width: 112px;
@@ -20,17 +22,33 @@ li {
         }
     }
 }
+
 .main--container {
     margin-bottom: 100px;
 }
+
 .main--menu {
     margin: 0;
 }
+
 @media (min-width: 1441px) {
     .main--container {
         margin: 0 6%;
     }
+
     .top--list-wrapper {
         padding: 0 6% !important;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .main--container {
+        width: 100%;
+    }
+
+    .menu--container {
+
+        padding: 40px 0 0 0;
     }
 }

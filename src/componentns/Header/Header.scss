@@ -140,23 +140,34 @@ a {
   padding: 0 1.1%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .header--location {
     display: none !important;
   }
+
+  .header--left {
+    justify-content: flex-end !important;
+  }
+}
+
+@media (max-width: 767px) {
 
   .header--left {
     width: 190px !important;
   }
 
   .header--right {
-    max-width: 210px !important;
+    max-width: 240px !important;
+  }
+
+  .header-icon {
+    margin-right: 5px !important;
   }
 
 
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .header--left {
     display: none !important;
   }
