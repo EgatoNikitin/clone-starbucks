@@ -66,11 +66,13 @@ export const Rewards = ()=>{
       </div>
       <RewardsCard price={price}/>
 
-      <RewardsSection
-        title={REW.section2.title}
-        subtitle={REW.section2.subtitle}>
-        <RewardsSectionItem array={REW.section2.arrayItem}/>
-      </RewardsSection>
+      <div className='rewards-section2'>
+        <RewardsSection
+          title={REW.section2.title}
+          subtitle={REW.section2.subtitle}>
+          <RewardsSectionItem array={REW.section2.arrayItem}/>
+        </RewardsSection>
+      </div>
 
       <div className='rewards-section3'>
         <RewardsSection

@@ -99,6 +99,10 @@
         align-items: center;
         text-align: center;
 
+        .rewards-title {
+            width: 65%;
+        }
+
         h2 {
             font-size: 30px;
             font-weight: 600;
@@ -121,6 +125,10 @@
 
             .rewards-item {
                 width: 28.3%;
+
+                img {
+                    width: 112px;
+                }
 
                 span {
                     display: inline-block;
@@ -234,16 +242,9 @@
             }
         }
 
-        // @media (min-width: 1441px) {
-        //     .rewards-steps {
-        //         width: 70%;
-        //     }
-        // }
-
         .row {
             display: flex;
             flex-direction: row;
-            // position: relative;
         }
     }
 }
@@ -391,12 +392,39 @@
 }
 
 @media (max-width: 767px) {
+    .rewards-section2 {
+        .rewards-title {
+            width: 90% !important;
+        }
+
+        .rewards-steps {
+            flex-direction: column;
+            margin: 0 20px !important;
+
+
+            .rewards-item {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                align-items: flex-start;
+                text-align: left;
+                padding: 0 0 32px 130px;
+
+                img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+    }
 
     .rewards-section3 {
         padding-left: 20px !important;
 
         .rewards-title {
-            width: 95% !important;
+            width: 90% !important;
         }
 
         .rewards-steps {
@@ -494,20 +522,13 @@
         padding: 48px 12.5%;
     }
 
-    // .line {
-    //     width: 70%;
-    //     left: 15%;
-    // }
-
     .rewards--header {
         padding: 30px 240px !important;
     }
 }
 
 @media (max-width: 1441px) {
-    // .line {
-    //     top: 64%;
-    // }
+
 
     .rewards--join {
         padding-left: 120px !important;
