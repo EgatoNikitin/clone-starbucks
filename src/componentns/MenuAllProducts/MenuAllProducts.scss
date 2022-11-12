@@ -3,7 +3,7 @@ li {
 }
 
 .main--container {
-    margin: 0 7%;
+    padding: 0 7% 0 0;
     display: flex;
 }
 
@@ -30,10 +30,15 @@ li {
 .main--menu {
     margin: 0;
 }
-
 @media (min-width: 1441px) {
     .main--container {
-        margin: 0 6%;
+        padding: 0 6%;
+    }
+}
+
+@media (max-width: 1441px) {
+    .main--container {
+        padding: 0 6%;
     }
 
     .top--list-wrapper {
@@ -42,13 +47,17 @@ li {
 }
 
 @media (max-width: 1050px) {
-
     .main--container {
         width: 100%;
     }
 
     .menu--container {
-
         padding: 40px 0 0 0;
+    }
+}
+@media (max-width: 400px) {
+    .main--container {
+        margin: 0;
+        padding: 0 7%;
     }
 }

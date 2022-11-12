@@ -1,9 +1,8 @@
-a {
+.nav-link {
   margin-right: 20px;
 
   li {
     list-style: none;
-
   }
 }
 
@@ -13,7 +12,7 @@ a {
   top: 80px;
   background-color: rgb(243, 243, 243);
   display: flex;
-  padding: 0 7%;
+  padding: 0 5.8%;
   border-bottom: 1px solid rgb(207, 207, 207);
   border-top: 2px solid rgb(211, 211, 211);
   align-items: center;
@@ -25,6 +24,7 @@ a {
   }
 
   .navLinkMenu {
+    margin-right: 20px;
     border-bottom: 2px solid black;
   }
 
@@ -37,5 +37,14 @@ a {
     justify-content: center;
     align-items: center;
     position: relative;
+    text-align: center;
+  }
+}
+@media (max-width: 435px) {
+  .top--list-item {
+    height: 35px !important;
+  }
+  .top--list-wrapper {
+    padding: 0 0 0 7%;
   }
 }

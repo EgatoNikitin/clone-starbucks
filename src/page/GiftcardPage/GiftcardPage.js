@@ -49,27 +49,6 @@ const GiftcardPage = () => {
       <Carusel
         title='ENCOURAGEMENT'
         images={GIFTCARD_ENCOURAGEMENT} />
-      {/* <Carusel
-        title='HALLOWEEN'
-        images={GIFTCARD_FEATURED} /> */}
-      {/* <Carusel
-        title='FALL'
-        images={GIFTCARD_FEATURED} />
-      <Carusel
-        title='AFFECTION'
-        images={GIFTCARD_FEATURED} />
-      <Carusel
-        title='BOSS DAY'
-        images={GIFTCARD_FEATURED} />
-      <Carusel
-        title='DIWALI'
-        images={GIFTCARD_FEATURED} />
-      <Carusel
-        title='VETERANS DAY'
-        images={GIFTCARD_FEATURED} />
-      <Carusel
-        title='ANYTIME'
-        images={GIFTCARD_FEATURED} /> */}
       <div className='bulk--baner'>
         <img src={img}/>
         <div className='bulk--baner-wrapper'>
