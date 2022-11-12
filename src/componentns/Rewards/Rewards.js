@@ -77,8 +77,8 @@ export const Rewards = ()=>{
           title={REW.section3.title}
           subtitle={REW.section3.subtitle}>
           <RewardsSectionItem array={REW.section3.arrayItem}/>
+          <div className='line'></div>
         </RewardsSection>
-        <div className='line'></div>
       </div>
 
       <div className='rewards-section4 rewards-section'>
