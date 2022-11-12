@@ -166,6 +166,8 @@
 .rewards-section3 {
     background-color: #f2f0eb;
     padding: 48px 40px;
+    height: 1500px;
+
     hr {
         position: absolute;
         top: 60%;
@@ -175,10 +177,12 @@
     .rewards-section {
         margin: 0 auto !important;
     }
+
     .rewards-steps {
         position: relative;
         height: 450px;
     }
+
     .rewards-title {
         width: 48%;
         padding-bottom: 64px;
@@ -196,15 +200,18 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+
             h3 {
                 padding: 0 !important;
             }
+
             .section3-img {
                 img {
                     max-height: 158px;
                     margin-right: 10px;
                 }
             }
+
             .section3-text {
                 display: flex;
                 flex-direction: column;
@@ -224,11 +231,13 @@
                 display: block;
             }
         }
+
         @media (min-width: 1441px) {
             .rewards-steps {
                 width: 70%;
             }
         }
+
         .row {
             display: flex;
             flex-direction: row;
@@ -246,15 +255,17 @@
     justify-content: space-between !important;
     height: 600px;
     width: 60%;
+
     button {
         margin-top: 20px;
         float: right;
     }
 
     .rewards-title {
-        width: 709px;
+        width: 80%;
         margin: 0 auto;
         text-align: left;
+
         a {
             color: #00754a;
             text-decoration: underline;
@@ -369,25 +380,68 @@
     top: 65.5%;
 }
 
+@media (max-width: 440px) {
+    .rewards-section4 {
+        .rewards-title:nth-child(2) {
+            margin-top: 50px !important;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .rewards-section4 {
+
+        width: 100% !important;
+
+    }
+
+    .rewards-section5 {
+        padding: 32px 20px !important;
+
+        h5 {
+            padding-bottom: 0 !important;
+        }
+
+        .rewards-title-wrapper {
+            flex-direction: column;
+
+            .rewards-title {
+                width: 100%;
+                padding: 0 !important;
+
+                h4 {
+                    margin-top: 32px;
+                }
+            }
+        }
+
+    }
+}
+
 @media (min-width: 1441px) {
     .rewards-steps {
         width: 78%;
     }
+
     .rewards-section5 {
         padding: 48px 12.5%;
     }
+
     .line {
         width: 70%;
         left: 15%;
     }
+
     .rewards--header {
         padding: 30px 240px !important;
     }
 }
+
 @media (max-width: 1441px) {
     .line {
         top: 64%;
     }
+
     .rewards--join {
         padding-left: 120px !important;
     }
