@@ -409,7 +409,12 @@
                 position: relative;
                 align-items: flex-start;
                 text-align: left;
-                padding: 0 0 32px 130px;
+                padding: 0 0 56px 130px;
+                justify-content: flex-start;
+
+                h3 {
+                    padding: 0 !important;
+                }
 
                 img {
                     position: absolute;
