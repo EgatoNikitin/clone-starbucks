@@ -39,12 +39,13 @@ export const Rewards = ()=>{
         <Buttons type='full-green' text='Join now'/>
         <p>Or <a>join in the app</a> for the best experience</p>
       </section>
-
-      <RewardsSection
-        title={REW.section1.title}
-        subtitle={REW.section1.subtitle}>
-        <RewardsSectionItem array={REW.section1.arrayItem}/>
-      </RewardsSection>
+      <div className='rewards-section1'>
+        <RewardsSection
+          title={REW.section1.title}
+          subtitle={REW.section1.subtitle}>
+          <RewardsSectionItem array={REW.section1.arrayItem}/>
+        </RewardsSection>
+      </div>
 
       <div className="stars--wrapper">
         <h2>Get your favorites for free</h2>
