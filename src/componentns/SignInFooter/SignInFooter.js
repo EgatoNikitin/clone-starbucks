@@ -1,12 +1,13 @@
 import {Buttons} from '../Buttons/Buttons';
 import './SignInFooter.scss';
+import {Link} from 'react-router-dom';
 
 export const SignInFooter = () =>{
   return (
     <footer className='login-footer'>
       <div className='footer--wrapper'>
         <div className='footer--row'>
-          <Buttons type='green' text='Find a store'/>
+          <Link to='/find'><Buttons type='green' text='Find a store'/></Link>
           <ul className='footer--list'>
             <li>
                         Web Accessibility
@@ -23,7 +24,7 @@ export const SignInFooter = () =>{
           </ul>
         </div>
 
-        <div>
+        <div className='bottom--copyrights'>
                 © 2022 Starbucks
         </div>
       </div>

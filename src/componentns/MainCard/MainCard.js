@@ -2,6 +2,7 @@ import {Buttons} from '../Buttons/Buttons';
 
 import './MainCard.scss';
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
 export const MainCard = (
     {
@@ -19,7 +20,8 @@ export const MainCard = (
           <div className='description--text'>
             {text}
           </div>
-          <Buttons type='light' text={buttonText} size='large'/>
+          <Link to='/login'><Buttons
+            type='light' text={buttonText} size='large'/></Link>
         </div>
       </div>
       <div className='main-card--img'>
